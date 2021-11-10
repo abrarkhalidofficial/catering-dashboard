@@ -11,7 +11,7 @@ export default function Plans() {
           <Button label="Delete" variant="secondary" />
         </div>
       </div>
-      <div className="plan__container">
+      <div className="table__container">
         sdfkjsaldkfkjlsaldfjsald;fjsla;dkjflsakdjf;lsajdf;lsjdafl;kj
       </div>
     </div>

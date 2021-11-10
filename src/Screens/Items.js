@@ -11,7 +11,7 @@ export default function Items() {
           <Button label="Delete" variant="secondary" />
         </div>
       </div>
-      <div className="item__container">
+      <div className="table__container">
         sdfkjsaldkfkjlsaldfjsald;fjsla;dkjflsakdjf;lsajdf;lsjdafl;kj
       </div>
     </div>

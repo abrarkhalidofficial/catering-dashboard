@@ -11,7 +11,7 @@ export default function Catagory() {
           <Button label="Delete" variant="secondary" />
         </div>
       </div>
-      <div className="catagory__container">
+      <div className="table__container">
         sdfkjsaldkfkjlsaldfjsald;fjsla;dkjflsakdjf;lsajdf;lsjdafl;kj
       </div>
     </div>

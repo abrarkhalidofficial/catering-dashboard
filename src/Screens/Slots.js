@@ -24,7 +24,7 @@ export default function Slots() {
           <Button label="Delete" variant="secondary" />
         </div>
       </div>
-      <div className="branch__container">
+      <div className="table__container">
         <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
         <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
         <EntryInfoRow tableEntryInfoRow={tableInfoRow} />

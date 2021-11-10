@@ -188,9 +188,12 @@ p {
 .table__container {
   flex: 1;
   padding: 2em;
+  max-width: 1200px;
+  overflow: auto;
 }
 .entry__heading__row {
   display: flex;
+  width: fit-content;
   flex-direction: row;
   text-align: center;
   height: fit-content;
@@ -209,6 +212,7 @@ p {
 }
 .entry__info__row {
   display: flex;
+  width: fit-content;
   height: fit-content;
   min-height: 50px;
   flex-direction: row;
