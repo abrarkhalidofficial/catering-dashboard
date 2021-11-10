@@ -145,7 +145,7 @@ export default class CustomeLineChart extends PureComponent {
           // eslint-disable-next-line react/jsx-no-bind
           onMouseUp={this.zoom.bind(this)}
         >
-          <CartesianGrid strokeDasharray="2 2" />
+          <CartesianGrid strokeDasharray="3 3" />
           {/* <XAxis
             allowDataOverflow
             dataKey="name"
@@ -182,7 +182,7 @@ export default class CustomeLineChart extends PureComponent {
               yAxisId="1"
               x1={refAreaLeft}
               x2={refAreaRight}
-              strokeOpacity={1}
+              strokeOpacity={0.3}
             />
           ) : null}
         </LineChart>
