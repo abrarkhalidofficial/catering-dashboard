@@ -233,6 +233,15 @@ p {
   min-width: 200px;
   text-align: center;
 }
+.nav__bar__content::-webkit-scrollbar {
+  width: 12px;
+}
+.nav__bar__content::-webkit-scrollbar-thumb {
+  background-color: $primary;
+}
+.nav__bar__content::-webkit-scrollbar-track {
+  background-color: var(--overlay);
+}
 @media (max-width: 1440px) {
   .side__bar {
     display: none;
