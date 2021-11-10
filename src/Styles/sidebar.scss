@@ -1,10 +1,8 @@
 .side__bar {
-  position: absolute;
-  width: 25%;
+  min-width: 400px;
+  width: 15%;
   height: 100vh;
   background-color: var(--gray-dark);
-  right: 0px;
-  top: 0px;
   z-index: 1000;
   display: flex;
   padding: 1.5em;

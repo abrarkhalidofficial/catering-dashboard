@@ -1,28 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function ThemeToggleBtn() {
   const [isDark, setIsDark] = useState(false);
-  function toggle_theme() {
-    var checkbox = document.querySelector("input[name=theme]");
+  useEffect(() => {
+    setIsDark(localStorage.getItem("user__theme"));
+  }, []);
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  }, [isDark]);
 
-    checkbox.addEventListener("change", function () {
-      if (checkbox.checked) {
-        document.documentElement.setAttribute("data-theme", "dark");
-        setIsDark(true);
-      } else {
-        document.documentElement.setAttribute("data-theme", "light");
-        setIsDark(false);
-      }
-    });
-  }
   return (
     <div className="side__bar__header__right__button">
       <input
         type="checkbox"
-        id="switch"
-        name="theme"
+        defaultChecked={isDark}
+        checked={isDark}
         className="side__bar__header__right__button__input"
-        onChange={toggle_theme}
+        onChange={(e) => {
+          if (e.target.checked) {
+            setIsDark(true);
+            localStorage.setItem("user__theme", true);
+          } else {
+            setIsDark(false);
+            localStorage.setItem("user__theme", false);
+          }
+        }}
       />
       <div className="side__bar__header__right__button__content">
         {isDark ? (

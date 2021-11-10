@@ -5,6 +5,7 @@ import ThemeToggleBtn from "./ThemeToggleBtn";
 import { useNavigate } from "react-router-dom";
 
 export default function SideBar({ isOnLogin }) {
+  const [isLogedin, setIsLogedin] = useState(true);
   const navigate = useNavigate();
   return (
     <div className="side__bar">
@@ -13,8 +14,14 @@ export default function SideBar({ isOnLogin }) {
         <ThemeToggleBtn />
       </div>
       <div className="side__bar__content">
-        {isOnLogin ? (
-          <form action="" className="side__bar__content__form">
+        {isLogedin ? (
+          <form
+            onSubmit={() => {
+              navigate("/dashboard");
+              setIsLogedin(false);
+            }}
+            className="side__bar__content__form"
+          >
             <div className="side__bar__content__form__logo">Bulevard</div>
             <InputBox
               type="email"
@@ -23,15 +30,9 @@ export default function SideBar({ isOnLogin }) {
               autoFocus
             />
             <InputBox type="password" placeholder="Password" required />
-            <InputBox variant="checkbox" placeholder="Remember" required />
+            <InputBox variant="checkbox" placeholder="Remember" />
             {/* <Button label="Login" variant="secondary" onClick={() => {}} /> */}
-            <Button
-              label="Login"
-              type="submit"
-              onClick={() => {
-                navigate("/dashboard");
-              }}
-            />
+            <Button label="Login" type="submit" />
           </form>
         ) : null}
       </div>

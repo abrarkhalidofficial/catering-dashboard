@@ -22,6 +22,7 @@ export default function InputBox({
           name={"input__box" + placeholder}
           id={"input__box" + placeholder}
           className="input__box__checkbox"
+          required={required}
         />
         <label htmlFor={"input__box" + placeholder}>{placeholder}</label>
       </div>
