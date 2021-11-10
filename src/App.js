@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import SideBar from "./Components/SideBar";
 import Dashboard from "./Screens/Dashboard";
+import Branch from "./Screens/Branch";
 import Login from "./Screens/Login";
 
 function Main({ isLogedin, setIsLogedin }) {
@@ -26,7 +27,7 @@ function App() {
             element={<Main isLogedin={isLogedin} setIsLogedin={setIsLogedin} />}
           >
             <Route path="" element={<Dashboard />} />
-            <Route path="branch" element={<Dashboard />} />
+            <Route path="branch" element={<Branch />} />
             <Route path="employee" element={<Dashboard />} />
             <Route path="customer" element={<Dashboard />} />
             <Route path="cateory" element={<Dashboard />} />
