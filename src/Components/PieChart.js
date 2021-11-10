@@ -22,17 +22,16 @@ export default class CustomePieChart extends PureComponent {
 
   render() {
     return (
-      <ResponsiveContainer width="30%" height={300}>
-        <PieChart width={400} height={400} onMouseEnter={this.onPeEnter}>
+      <ResponsiveContainer width="100%" height={220}>
+        <PieChart>
           <Tooltip />
           <Pie
             data={data}
-            cx={120}
-            cy={200}
+            // cx={120}
+            // cy={200}
             innerRadius={60}
             outerRadius={80}
-            fill="#8884d8"
-            paddingAngle={5}
+            fill="#242424"
             dataKey="value"
           >
             {data.map((entry, index) => (

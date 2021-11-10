@@ -47,10 +47,16 @@ export default function Dashboard() {
               <div className="dashboard__container__card__value">$12,900</div>
             </div>
           </div>
-          <div className="dashboard__container__card">
+          <div className="dashboard__container__card dashboard__container__card__chart">
+            <div className="dashboard__container__card__chart__heading">
+              Traffic
+            </div>
             <BarChart />
           </div>
-          <div className="dashboard__container__card">
+          <div className="dashboard__container__card dashboard__container__card__chart">
+            <div className="dashboard__container__card__chart__heading">
+              Traffic Sources
+            </div>
             <PieChart />
           </div>
         </div>

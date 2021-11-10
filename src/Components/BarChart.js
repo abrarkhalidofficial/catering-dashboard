@@ -61,22 +61,11 @@ export default class CustomeBarChart extends PureComponent {
 
   render() {
     return (
-      <ResponsiveContainer width="30%" height={300}>
-        <BarChart
-          layout="horizontal"
-          width={500}
-          height={300}
-          data={data}
-          margin={{
-            top: 20,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+      <ResponsiveContainer width="100%" height={220}>
+        <BarChart layout="horizontal" data={data}>
+          {/* <CartesianGrid strokeDasharray="3 3" /> */}
+          {/* <XAxis  />
+          <YAxis dataKey="name"/> */}
           <Tooltip />
           <Legend />
           <Bar dataKey="uv" stackId="a" fill="#508FF4" />
