@@ -4,8 +4,7 @@ import InputBox from "./InputBox";
 import ThemeToggleBtn from "./ThemeToggleBtn";
 import { useNavigate } from "react-router-dom";
 
-export default function SideBar({ isOnLogin }) {
-  const [isLogedin, setIsLogedin] = useState(true);
+export default function SideBar({ isLogedin, setIsLogedin }) {
   const navigate = useNavigate();
   return (
     <div className="side__bar">

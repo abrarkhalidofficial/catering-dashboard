@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import loginImg from "../Assets/loginImg.png";
 
-export default function Login() {
+export default function Login({ setIsLogedin }) {
+  useEffect(() => {
+    setIsLogedin(true);
+  }, [window.location.pathname === "/"]);
   return (
     <div className="login__container">
       <div className="login__container__img__wrapper"></div>
