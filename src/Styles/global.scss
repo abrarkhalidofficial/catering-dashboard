@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+$primary: #fb6a3b;
+$secondary: #0062ff;
+html {
+  --white: #ffffff;
+  --text-color: #242424;
+  --gray: #f3f1f1;
+  --gray-dark: #f8f8f8;
+  --overlay: rgba(0, 0, 0, 0);
+}
+
+html[data-theme="dark"] {
+  --white: #393939;
+  --text-color: #ffffff;
+  --gray: #232323;
+  --gray-dark: #2c2c2c;
+  --overlay: rgba(0, 0, 0, 0.5);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+}
+input:hover,
+button:hover {
+  transition: 300ms ease-in-out;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 30px;
+}
+.input__box {
+  width: 100%;
+  background-color: var(--gray);
+  border: 1px solid var(--gray);
+  height: 45px;
+  border-radius: 50px;
+  padding: 0em 1.5em;
+  font-size: 13px;
+  color: var(--text-color);
+  outline: none;
+  margin-bottom: 1.5em;
+}
+.input__box:hover {
+  border-color: $primary;
+}
+.input__box:focus {
+  border-color: $primary;
+  border-width: 2px;
+}
+.input__box__checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+  margin-bottom: 1.5em;
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 1em;
+    user-select: none;
+    color: var(--text-color);
+    font-size: 14px;
+  }
+
+  // Box.
+  & + label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: var(--gray);
+    border-radius: 5px;
+  }
+
+  // Box hover
+  &:hover + label:before {
+    background: $primary;
+  }
+
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: $primary;
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+      4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}
+.button {
+  width: fit-content;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  width: 150px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin: 0.5em 0em;
+}
+.button__primary {
+  background-color: $primary;
+}
+.button__primary:hover {
+  background-color: darken($primary, 10%);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.button__secondary {
+  background-color: var(--text-color);
+}
+.button__secondary:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
