@@ -1,0 +1,32 @@
+.dashboard__container {
+  display: flex;
+  flex-direction: column;
+  max-height: 75%;
+  overflow-y: auto;
+}
+.dashboard__container__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: brown;
+}
+.dashboard__container__card {
+  max-width: 25%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #0062ff;
+}
+.dashboard__container__card__img {
+  width: 100%;
+}
+.dashboard__container__card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+.dashboard__container__card__primary {
+  background-color: #0062ff;
+}
+.dashboard__container__card__secondary {
+  background-color: $primary;
+}

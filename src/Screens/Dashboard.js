@@ -1,5 +1,9 @@
 import React from "react";
+import BarChart from "../Components/BarChart";
 import Button from "../Components/Button";
+import LineChart from "../Components/LineChart";
+import PieChart from "../Components/PieChart";
+import cardBackground from "../Assets/cardBackground.png";
 
 export default function Dashboard() {
   return (
@@ -12,7 +16,44 @@ export default function Dashboard() {
         </div>
       </div>
       <div className="dashboard__container">
-        sdfkjsaldkfkjlsaldfjsald;fjsla;dkjflsakdjf;lsajdf;lsjdafl;kj
+        <div className="dashboard__container__top">
+          <LineChart />
+        </div>
+
+        <div className="dashboard__container__bottom">
+          <div className="dashboard__container__card dashboard__container__card__primary">
+            <img
+              src={cardBackground}
+              alt="cardBackground"
+              className="dashboard__container__card__img"
+            />
+            <div className="dashboard__container__card__content">
+              <div className="dashboard__container__card__heading">
+                Total Profit
+              </div>
+              <div className="dashboard__container__card__value">$12,900</div>
+            </div>
+          </div>
+          <div className="dashboard__container__card dashboard__container__card__secondary">
+            <img
+              src={cardBackground}
+              alt="cardBackground"
+              className="dashboard__container__card__img"
+            />
+            <div className="dashboard__container__card__content">
+              <div className="dashboard__container__card__heading">
+                Total expense
+              </div>
+              <div className="dashboard__container__card__value">$12,900</div>
+            </div>
+          </div>
+          <div className="dashboard__container__card">
+            <BarChart />
+          </div>
+          <div className="dashboard__container__card">
+            <PieChart />
+          </div>
+        </div>
       </div>
     </div>
   );

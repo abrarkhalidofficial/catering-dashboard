@@ -21,6 +21,7 @@
   background: var(--overlay);
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
+  overflow-y: auto;
 }
 .nav__bar__content__link {
   position: relative;
@@ -37,9 +38,9 @@
 .nav__bar__content__link__content {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   background-color: transparent;
-  padding: 0.7em 1.3em;
+  padding: 0.5em 1em;
   border-radius: 50px;
   margin-bottom: 0.5em;
   color: var(--text-color);
@@ -51,6 +52,7 @@
 }
 .nav__bar__content__link__input:hover ~ .nav__bar__content__link__content,
 .nav__bar__content__link__input:checked ~ .nav__bar__content__link__content {
+  transition: 300ms ease-in-out;
   background-color: $primary;
   color: white;
 }
