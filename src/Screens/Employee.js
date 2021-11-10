@@ -1,7 +1,28 @@
 import React from "react";
 import Button from "../Components/Button";
+import EntryHeadingRow from "../Components/EntryHeadingRow";
+import EntryInfoRow from "../Components/EntryInfoRow";
 
 export default function Employee() {
+  const tableHeadingRow = [
+    { heading: "Profile" },
+    { heading: "Name" },
+    { heading: "Last Name" },
+    { heading: "Email" },
+    { heading: "Phone" },
+    { heading: "Role" },
+    { heading: "CNIC" },
+  ];
+
+  const tableInfoRow = [
+    { type: "img" },
+    { info: "Fahad" },
+    { info: "Ayyaz" },
+    { info: "abc123@gmail.com" },
+    { info: "0321-3741371" },
+    { info: "Manager" },
+    { info: "33105-123456-2" },
+  ];
   return (
     <div className="container">
       <div className="container__header">
@@ -11,8 +32,16 @@ export default function Employee() {
           <Button label="Delete" variant="secondary" />
         </div>
       </div>
-      <div className="employee__container">
-        sdfkjsaldkfkjlsaldfjsald;fjsla;dkjflsakdjf;lsajdf;lsjdafl;kj
+      <div className="branch__container">
+        <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
       </div>
     </div>
   );
