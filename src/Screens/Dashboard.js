@@ -43,7 +43,7 @@ export default function Dashboard() {
                     transform="translate(415.165 345.583) rotate(-89)"
                     fill="none"
                     stroke="#00ff08"
-                    stroke-width="1"
+                    strokeWidth="1"
                   />
                   <path
                     id="Polygon_1"

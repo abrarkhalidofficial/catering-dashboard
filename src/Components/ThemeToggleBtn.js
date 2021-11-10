@@ -3,30 +3,28 @@ import React, { useEffect, useState } from "react";
 export default function ThemeToggleBtn() {
   const [isDark, setIsDark] = useState(false);
   useEffect(() => {
-    setIsDark(localStorage.getItem("user__theme"));
-  }, []);
-  useEffect(() => {
     if (isDark) {
       document.documentElement.setAttribute("data-theme", "dark");
     } else {
       document.documentElement.setAttribute("data-theme", "light");
     }
   }, [isDark]);
-
+  useEffect(() => {
+    setIsDark(localStorage.getItem("theme") === "true" ? true : false);
+  }, []);
   return (
     <div className="side__bar__header__right__button">
       <input
         type="checkbox"
-        defaultChecked={isDark}
-        checked={isDark}
         className="side__bar__header__right__button__input"
+        checked={isDark}
         onChange={(e) => {
           if (e.target.checked) {
             setIsDark(true);
-            localStorage.setItem("user__theme", true);
+            localStorage.setItem("theme", true);
           } else {
             setIsDark(false);
-            localStorage.setItem("user__theme", false);
+            localStorage.setItem("theme", false);
           }
         }}
       />
@@ -42,9 +40,9 @@ export default function ThemeToggleBtn() {
               transform="translate(7 7)"
               fill="none"
               stroke="#f9f9f9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <line
               id="Line_1"
@@ -53,9 +51,9 @@ export default function ThemeToggleBtn() {
               transform="translate(12 1)"
               fill="none"
               stroke="#f9f9f9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <line
               id="Line_2"
@@ -64,9 +62,9 @@ export default function ThemeToggleBtn() {
               transform="translate(12 21)"
               fill="none"
               stroke="#f9f9f9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <line
               id="Line_3"
@@ -76,9 +74,9 @@ export default function ThemeToggleBtn() {
               transform="translate(4.22 4.22)"
               fill="none"
               stroke="#f9f9f9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <line
               id="Line_4"
@@ -88,9 +86,9 @@ export default function ThemeToggleBtn() {
               transform="translate(18.36 18.36)"
               fill="none"
               stroke="#f9f9f9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <line
               id="Line_5"
@@ -99,9 +97,9 @@ export default function ThemeToggleBtn() {
               transform="translate(1 12)"
               fill="none"
               stroke="#f9f9f9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <line
               id="Line_6"
@@ -110,9 +108,9 @@ export default function ThemeToggleBtn() {
               transform="translate(21 12)"
               fill="none"
               stroke="#f9f9f9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <line
               id="Line_7"
@@ -122,9 +120,9 @@ export default function ThemeToggleBtn() {
               transform="translate(4.22 18.36)"
               fill="none"
               stroke="#f9f9f9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <line
               id="Line_8"
@@ -134,9 +132,9 @@ export default function ThemeToggleBtn() {
               transform="translate(18.36 4.22)"
               fill="none"
               stroke="#f9f9f9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
           </svg>
         ) : (
@@ -147,9 +145,9 @@ export default function ThemeToggleBtn() {
               transform="translate(-2.037 -2)"
               fill="none"
               stroke="#fb6a3b"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
           </svg>
         )}
