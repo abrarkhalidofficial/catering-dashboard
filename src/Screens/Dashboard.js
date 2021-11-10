@@ -17,7 +17,12 @@ export default function Dashboard() {
       </div>
       <div className="dashboard__container">
         <div className="dashboard__container__top">
-          <LineChart />
+          <div
+            className="dashboard__container__card dashboard__container__card__chart"
+            style={{ maxWidth: "100%", width: "70%", padding: "1em 0" }}
+          >
+            <LineChart />
+          </div>
         </div>
 
         <div className="dashboard__container__bottom">

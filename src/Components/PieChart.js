@@ -22,7 +22,7 @@ export default class CustomePieChart extends PureComponent {
 
   render() {
     return (
-      <ResponsiveContainer width="100%" height={220}>
+      <ResponsiveContainer width="100%" minHeight={220} height="90%">
         <PieChart>
           <Tooltip />
           <Pie

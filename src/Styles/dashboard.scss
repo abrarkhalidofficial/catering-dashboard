@@ -5,6 +5,12 @@
   width: 100%;
   padding: 2em;
 }
+.dashboard__container__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
 .dashboard__container__bottom {
   display: flex;
   justify-content: space-between;
@@ -59,6 +65,6 @@
 }
 @media (max-width: 1440px) {
   .dashboard__container {
-    max-height: 70%;
+    max-height: 73%;
   }
 }
