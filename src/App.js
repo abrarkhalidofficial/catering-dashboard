@@ -5,6 +5,14 @@ import SideBar from "./Components/SideBar";
 import Dashboard from "./Screens/Dashboard";
 import Branch from "./Screens/Branch";
 import Login from "./Screens/Login";
+import Employee from "./Screens/Employee";
+import Customer from "./Screens/Customer";
+import Catagory from "./Screens/Catagory";
+import Items from "./Screens/Items";
+import Plans from "./Screens/Plans";
+import Slabs from "./Screens/Slabs";
+import Slots from "./Screens/Slots";
+import Booking from "./Screens/Booking";
 
 function Main({ isLogedin, setIsLogedin }) {
   return (
@@ -28,14 +36,14 @@ function App() {
           >
             <Route path="" element={<Dashboard />} />
             <Route path="branch" element={<Branch />} />
-            <Route path="employee" element={<Dashboard />} />
-            <Route path="customer" element={<Dashboard />} />
-            <Route path="cateory" element={<Dashboard />} />
-            <Route path="items" element={<Dashboard />} />
-            <Route path="plans" element={<Dashboard />} />
-            <Route path="slabs" element={<Dashboard />} />
-            <Route path="slots" element={<Dashboard />} />
-            <Route path="booking" element={<Dashboard />} />
+            <Route path="booking" element={<Booking />} />
+            <Route path="employee" element={<Employee />} />
+            <Route path="customer" element={<Customer />} />
+            <Route path="cateory" element={<Catagory />} />
+            <Route path="items" element={<Items />} />
+            <Route path="plans" element={<Plans />} />
+            <Route path="slabs" element={<Slabs />} />
+            <Route path="slots" element={<Slots />} />
           </Route>
         </Routes>
         <SideBar isLogedin={isLogedin} setIsLogedin={setIsLogedin} />

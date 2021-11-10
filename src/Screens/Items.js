@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Components/Button";
 
-export default function Dashboard() {
+export default function Items() {
   return (
     <div className="container">
       <div className="container__header">
