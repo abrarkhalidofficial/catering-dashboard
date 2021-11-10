@@ -142,8 +142,8 @@ export default function NavBar() {
             }
           />
           <NavBarLink
-            path="/dashboard/employee"
-            title="Employee"
+            path="/dashboard/category"
+            title="catagories"
             svg={
               <svg
                 id="dashboard"
@@ -179,8 +179,8 @@ export default function NavBar() {
             }
           />
           <NavBarLink
-            path="/dashboard/employee"
-            title="Employee"
+            path="/dashboard/items"
+            title="items"
             svg={
               <svg
                 id="dashboard"
@@ -216,8 +216,8 @@ export default function NavBar() {
             }
           />
           <NavBarLink
-            path="/dashboard/employee"
-            title="Employee"
+            path="/dashboard/plans"
+            title="Plans"
             svg={
               <svg
                 id="dashboard"
@@ -253,8 +253,8 @@ export default function NavBar() {
             }
           />
           <NavBarLink
-            path="/dashboard/employee"
-            title="Employee"
+            path="/dashboard/slabs"
+            title="Slabs"
             svg={
               <svg
                 id="dashboard"
@@ -290,8 +290,8 @@ export default function NavBar() {
             }
           />
           <NavBarLink
-            path="/dashboard/employee"
-            title="Employee"
+            path="/dashboard/slots"
+            title="Slots"
             svg={
               <svg
                 id="dashboard"
@@ -327,8 +327,8 @@ export default function NavBar() {
             }
           />
           <NavBarLink
-            path="/dashboard/employee"
-            title="Employee"
+            path="/dashboard/booking"
+            title="Booking"
             svg={
               <svg
                 id="dashboard"
