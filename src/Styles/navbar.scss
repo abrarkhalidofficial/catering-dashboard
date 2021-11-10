@@ -40,14 +40,14 @@
   align-items: center;
   font-size: 14px;
   background-color: transparent;
-  padding: 0.5em 1em;
+  padding: 0.7em 1.1em;
   border-radius: 50px;
   margin-bottom: 0.5em;
   color: var(--text-color);
 }
 .nav__bar__content__link__content svg {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-right: 1em;
 }
 .nav__bar__content__link__input:hover ~ .nav__bar__content__link__content,
@@ -55,6 +55,7 @@
   transition: 300ms ease-in-out;
   background-color: $primary;
   color: white;
+  fill: white;
 }
 .nav__bar__content__logout {
   margin-top: 2em;
