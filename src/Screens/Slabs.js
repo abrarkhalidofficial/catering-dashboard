@@ -1,7 +1,24 @@
 import React from "react";
 import Button from "../Components/Button";
+import EntryHeadingRow from "../Components/EntryHeadingRow";
+import EntryInfoRow from "../Components/EntryInfoRow";
 
 export default function Slabs() {
+  const tableHeadingRow = [
+    { heading: "" },
+    { heading: "Name" },
+    { heading: "Time" },
+    { heading: "Max Booking" },
+    { heading: "Booked" },
+  ];
+
+  const tableInfoRow = [
+    { type: "btn", label: "Edit" },
+    { info: "Fahad" },
+    { info: "12:00 AM to 2:00 PM" },
+    { info: "1234" },
+    { info: "321" },
+  ];
   return (
     <div className="container">
       <div className="container__header">
@@ -11,8 +28,16 @@ export default function Slabs() {
           <Button label="Delete" variant="secondary" />
         </div>
       </div>
-      <div className="slab__container">
-        sdfkjsaldkfkjlsaldfjsald;fjsla;dkjflsakdjf;lsajdf;lsjdafl;kj
+      <div className="branch__container">
+        <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
       </div>
     </div>
   );

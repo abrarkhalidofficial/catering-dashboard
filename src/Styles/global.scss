@@ -192,7 +192,9 @@ p {
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: 1em;
+  height: fit-content;
+  min-height: 50px;
+  align-items: center;
   border-radius: 30px;
   background: var(--gray);
 }
@@ -201,11 +203,13 @@ p {
   font-weight: bold;
   color: var(--text-color);
   width: fit-content;
-  min-width: 194px;
+  min-width: 200px;
   text-align: center;
 }
 .entry__info__row {
   display: flex;
+  height: fit-content;
+  min-height: 50px;
   flex-direction: row;
   align-items: center;
   text-align: center;
