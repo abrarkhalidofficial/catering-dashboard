@@ -5,7 +5,7 @@ export default function Employee() {
   return (
     <div className="container">
       <div className="container__header">
-        <div className="container__header__heading">Branches</div>
+        <div className="container__header__heading">Employee</div>
         <div className="container__header__btns">
           <Button label="Add" style={{ marginRight: "1em" }} />
           <Button label="Delete" variant="secondary" />

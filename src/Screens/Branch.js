@@ -1,7 +1,22 @@
 import React from "react";
 import Button from "../Components/Button";
+import EntryHeadingRow from "../Components/EntryHeadingRow";
+import EntryInfoRow from "../Components/EntryInfoRow";
 
 export default function Branch() {
+  const tableHeadingRow = [
+    { heading: "" },
+    { heading: "Image" },
+    { heading: "Name" },
+    { heading: "Address" },
+  ];
+
+  const tableInfoRow = [
+    { type: "btn", label: "Edit" },
+    { type: "img" },
+    { info: "House" },
+    { info: "Makaan No.2 Iqbal colony Lohore" },
+  ];
   return (
     <div className="container">
       <div className="container__header">
@@ -12,7 +27,15 @@ export default function Branch() {
         </div>
       </div>
       <div className="branch__container">
-        sdfkjsaldkfkjlsaldfjsald;fjsla;dkjflsakdjf;lsajdf;lsjdafl;kj
+        <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
       </div>
     </div>
   );
