@@ -280,14 +280,50 @@ p {
   width: 100%;
   justify-content: flex-start;
 }
-.nav__bar__content::-webkit-scrollbar {
+.nav__bar__content::-webkit-scrollbar,
+.notification__panel__content::-webkit-scrollbar {
   width: 12px;
 }
-.nav__bar__content::-webkit-scrollbar-thumb {
+.nav__bar__content::-webkit-scrollbar-thumb,
+.notification__panel__content::-webkit-scrollbar-thumb {
   background-color: $primary;
+  border-radius: 50px;
 }
-.nav__bar__content::-webkit-scrollbar-track {
+.nav__bar__content::-webkit-scrollbar-track,
+.notification__panel__content::-webkit-scrollbar-track {
   background-color: var(--overlay);
+  border-radius: 50px;
+}
+.icon__btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0em;
+  border: none;
+  background-color: var(--white);
+  cursor: pointer;
+}
+.icon__btn svg {
+  width: 18px;
+  height: 18px;
+}
+.icon__btn:hover,
+.avatar__btn:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.avatar__btn {
+  padding: 0em;
+  border-radius: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.avatar__btn__img {
+  width: 60px;
+  height: 60px;
 }
 @media (max-width: 1440px) {
   .side__bar {

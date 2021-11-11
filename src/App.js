@@ -31,7 +31,6 @@ function Main({ setIsLogedin, isSmallNav }) {
 }
 function App() {
   const [isLogedin, setIsLogedin] = useState(false);
-  const [isOnUserProfile, setIsOnUserProfile] = useState(false);
   const [isSmallNav, setIsSmallNav] = useState(false);
 
   return (
@@ -120,12 +119,7 @@ function App() {
           </Route>
         </Routes>
         {isSmallNav ? null : (
-          <SideBar
-            isLogedin={isLogedin}
-            setIsLogedin={setIsLogedin}
-            isOnUserProfile={isOnUserProfile}
-            setIsOnUserProfile={setIsOnUserProfile}
-          />
+          <SideBar isLogedin={isLogedin} setIsLogedin={setIsLogedin} />
         )}
       </div>
     </BrowserRouter>

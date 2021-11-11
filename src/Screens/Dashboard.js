@@ -13,10 +13,10 @@ export default function Dashboard({ setIsSmallNav }) {
     <div className="container">
       <div className="container__header">
         <div className="container__header__heading">Dashboard</div>
-        <div className="container__header__btns">
+        {/* <div className="container__header__btns">
           <Button label="Add" style={{ marginRight: "1em" }} />
           <Button label="Delete" variant="secondary" />
-        </div>
+        </div> */}
       </div>
       <div className="dashboard__container">
         <div className="dashboard__container__top">
