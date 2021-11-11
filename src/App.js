@@ -26,6 +26,7 @@ import AddSlots from "./Screens/AddSlots";
 import EditSlots from "./Screens/EditSlots";
 import AddSlabs from "./Screens/AddSlabs";
 import EditSlabs from "./Screens/EditSlabs";
+import CustomerDetails from "./Screens/CustomerDetails";
 
 function Main({ setIsLogedin, isSmallNav, isLogedin }) {
   return (
@@ -78,6 +79,10 @@ function App() {
             <Route
               path="customer"
               element={<Customer setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="customer-details"
+              element={<CustomerDetails setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="category"
