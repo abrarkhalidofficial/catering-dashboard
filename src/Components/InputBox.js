@@ -7,6 +7,7 @@ export default function InputBox({
   autoFocus,
   variant,
   svg,
+  style,
 }) {
   if (variant === "checkbox") {
     return (
@@ -30,7 +31,7 @@ export default function InputBox({
     );
   } else if (variant === "search") {
     return (
-      <div className="input__box__search">
+      <div className="input__box__search" style={style}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"

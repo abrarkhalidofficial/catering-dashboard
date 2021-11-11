@@ -155,6 +155,7 @@ li {
 }
 .input__box__search__field {
   width: 200px;
+  flex: 1;
   height: 100%;
   background-color: transparent;
   border: none;
@@ -203,6 +204,31 @@ li {
   display: flex;
   flex-direction: column;
   // background-color: #0062ff;
+}
+.container__wrapper {
+  display: flex;
+  align-items: center;
+}
+.container__wrapper .container {
+  border-right: 15px solid var(--gray);
+  width: 22%;
+  height: 100vh;
+}
+.container__wrapper .container:last-child {
+  border: none;
+  width: 34%;
+}
+.container__wrapper .container__header {
+  margin-bottom: 0.5em;
+}
+.container__wrapper .button {
+  width: 80px;
+}
+.container__wrapper .container__header__heading {
+  font-size: 22px;
+}
+.container__wrapper .input__box__search {
+  margin-bottom: 0.5em;
 }
 .container__header {
   display: flex;
