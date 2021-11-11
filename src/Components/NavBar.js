@@ -17,14 +17,14 @@ function NavBarLink({ svg, title, path, defaultChecked }) {
       />
       <div className="nav__bar__content__link__content">
         {svg}
-        {title}
+        <span>{title}</span>
       </div>
     </div>
   );
 }
-export default function NavBar() {
+export default function NavBar({ isSmallNav }) {
   return (
-    <div className="nav__bar">
+    <div className={isSmallNav ? "nav__bar nav__bar__small" : "nav__bar"}>
       <img src={navBar} alt="navBar" className="nav__bar__img" />
       <div className="nav__bar__content">
         <div className="side__bar__content__form__logo">Bulevard</div>

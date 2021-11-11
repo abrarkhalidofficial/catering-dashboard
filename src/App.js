@@ -14,16 +14,17 @@ import Slabs from "./Screens/Slabs";
 import Slots from "./Screens/Slots";
 import Booking from "./Screens/Booking";
 
-function Main({ isLogedin, setIsLogedin }) {
+function Main({ isLogedin, setIsLogedin, isSmallNav }) {
   return (
     <>
-      <NavBar setIsLogedin={setIsLogedin} />
+      <NavBar setIsLogedin={setIsLogedin} isSmallNav={isSmallNav} />
       <Outlet />
     </>
   );
 }
 function App() {
   const [isLogedin, setIsLogedin] = useState(true);
+  const [isSmallNav, setIsSmallNav] = useState(false);
 
   return (
     <BrowserRouter>
@@ -32,18 +33,54 @@ function App() {
           <Route path="/" element={<Login setIsLogedin={setIsLogedin} />} />
           <Route
             path="/dashboard"
-            element={<Main isLogedin={isLogedin} setIsLogedin={setIsLogedin} />}
+            element={
+              <Main
+                isLogedin={isLogedin}
+                setIsLogedin={setIsLogedin}
+                isSmallNav={isSmallNav}
+              />
+            }
           >
-            <Route path="" element={<Dashboard />} />
-            <Route path="branch" element={<Branch />} />
-            <Route path="booking" element={<Booking />} />
-            <Route path="employee" element={<Employee />} />
-            <Route path="customer" element={<Customer />} />
-            <Route path="category" element={<Catagory />} />
-            <Route path="items" element={<Items />} />
-            <Route path="plans" element={<Plans />} />
-            <Route path="slabs" element={<Slabs />} />
-            <Route path="slots" element={<Slots />} />
+            <Route
+              path=""
+              element={<Dashboard setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="branch"
+              element={<Branch setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="booking"
+              element={<Booking setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="employee"
+              element={<Employee setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="customer"
+              element={<Customer setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="category"
+              element={<Catagory setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="items"
+              element={<Items setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="plans"
+              element={<Plans setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="slabs"
+              element={<Slabs setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="slots"
+              element={<Slots setIsSmallNav={setIsSmallNav} />}
+            />
           </Route>
         </Routes>
         <SideBar isLogedin={isLogedin} setIsLogedin={setIsLogedin} />

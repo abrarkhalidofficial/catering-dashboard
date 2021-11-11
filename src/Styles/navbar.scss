@@ -61,3 +61,38 @@
   border-top: 1px solid var(--gray);
   padding-top: 1em;
 }
+.nav__bar__small {
+  width: 85px;
+  min-width: 85px;
+}
+.nav__bar__small .side__bar__content__form__logo {
+  font-size: 10px;
+}
+.nav__bar__small .nav__bar__content {
+  width: fit-content;
+}
+.nav__bar__small .nav__bar__content__link__content {
+  width: fit-content;
+}
+.nav__bar__small .nav__bar__content__link__content svg {
+  margin-right: 0em;
+}
+.nav__bar__small .nav__bar__content__link__content span {
+  display: none;
+}
+.nav__bar__small .nav__bar__content:hover .nav__bar__content__link__content {
+  width: 200px;
+}
+.nav__bar__small
+  .nav__bar__content:hover
+  .nav__bar__content__link__content
+  svg {
+  margin-right: 1em;
+}
+
+.nav__bar__small
+  .nav__bar__content:hover
+  .nav__bar__content__link__content
+  span {
+  display: flex;
+}

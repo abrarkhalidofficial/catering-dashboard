@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BarChart from "../Components/BarChart";
 import Button from "../Components/Button";
 import LineChart from "../Components/LineChart";
 import PieChart from "../Components/PieChart";
 import cardBackground from "../Assets/cardBackground.png";
 
-export default function Dashboard() {
+export default function Dashboard({ setIsSmallNav }) {
+  useEffect(() => {
+    setIsSmallNav(false);
+  }, []);
   return (
     <div className="container">
       <div className="container__header">

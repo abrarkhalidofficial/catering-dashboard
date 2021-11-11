@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../Components/Button";
 import InputBox from "../Components/InputBox";
 
-export default function Booking() {
+export default function Booking({ setIsSmallNav }) {
+  useEffect(() => {
+    setIsSmallNav(false);
+  }, []);
   return (
     <div className="container">
       <div className="container__header">

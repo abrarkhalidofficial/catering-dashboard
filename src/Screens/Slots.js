@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../Components/Button";
 import EntryHeadingRow from "../Components/EntryHeadingRow";
 import EntryInfoRow from "../Components/EntryInfoRow";
 import InputBox from "../Components/InputBox";
 
-export default function Slots() {
+export default function Slots({ setIsSmallNav }) {
+  useEffect(() => {
+    setIsSmallNav(false);
+  }, []);
   const tableHeadingRow = [
     { heading: "" },
     { heading: "Range" },

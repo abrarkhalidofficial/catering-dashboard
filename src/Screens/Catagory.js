@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../Components/Button";
 import InputBox from "../Components/InputBox";
 
-export default function Catagory() {
+export default function Catagory({ setIsSmallNav }) {
+  useEffect(() => {
+    setIsSmallNav(true);
+  }, []);
   return (
     <div className="container">
       <div className="container__header">
