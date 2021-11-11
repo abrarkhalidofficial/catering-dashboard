@@ -12,6 +12,7 @@ import Items from "./Screens/Items";
 import Plans from "./Screens/Plans";
 import Slabs from "./Screens/Slabs";
 import Slots from "./Screens/Slots";
+import Role from "./Screens/Role";
 import Booking from "./Screens/Booking";
 
 function Main({ setIsLogedin, isSmallNav }) {
@@ -73,6 +74,10 @@ function App() {
             <Route
               path="plans"
               element={<Plans setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="role"
+              element={<Role setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="slabs"
