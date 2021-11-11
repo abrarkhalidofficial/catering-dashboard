@@ -41,6 +41,32 @@ export default function Branch({ setIsSmallNav }) {
         <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
         <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
         <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import EntryImg from "../Assets/EntryImg.png";
 import Button from "./Button";
 
@@ -20,9 +21,9 @@ function EntryInfoRowData({ value, variant, label }) {
   }
 }
 
-export default function EntryInfoRow({ tableEntryInfoRow }) {
+export default function EntryInfoRow({ tableEntryInfoRow, path }) {
   return (
-    <div className="entry__info__row">
+    <Link to={path ? path : ""} className="entry__info__row">
       {tableEntryInfoRow.map((item) => (
         <EntryInfoRowData
           value={item.info}
@@ -32,6 +33,6 @@ export default function EntryInfoRow({ tableEntryInfoRow }) {
           label={item.label}
         />
       ))}
-    </div>
+    </Link>
   );
 }

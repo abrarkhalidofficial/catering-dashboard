@@ -4,6 +4,7 @@
   overflow-y: auto;
   width: 100%;
   padding: 2em;
+  padding-top: 0em;
 }
 .dashboard__container__top {
   display: flex;
@@ -139,6 +140,6 @@
 }
 @media (max-width: 1440px) {
   .dashboard__container {
-    max-height: 73%;
+    max-height: 80vh;
   }
 }
