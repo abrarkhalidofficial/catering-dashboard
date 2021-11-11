@@ -14,6 +14,12 @@ import Slabs from "./Screens/Slabs";
 import Slots from "./Screens/Slots";
 import Role from "./Screens/Role";
 import Booking from "./Screens/Booking";
+import AddRole from "./Screens/AddRole";
+import EditRole from "./Screens/EditRole";
+import AddSlots from "./Screens/AddSlots";
+import EditSlots from "./Screens/EditSlots";
+import AddSlabs from "./Screens/AddSlabs";
+import EditSlabs from "./Screens/EditSlabs";
 
 function Main({ setIsLogedin, isSmallNav }) {
   return (
@@ -80,12 +86,36 @@ function App() {
               element={<Role setIsSmallNav={setIsSmallNav} />}
             />
             <Route
+              path="add-role"
+              element={<AddRole setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="edit-role"
+              element={<EditRole setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
               path="slabs"
               element={<Slabs setIsSmallNav={setIsSmallNav} />}
             />
             <Route
+              path="add-slabs"
+              element={<AddSlabs setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="edit-slabs"
+              element={<EditSlabs setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
               path="slots"
               element={<Slots setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="add-slots"
+              element={<AddSlots setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="edit-slots"
+              element={<EditSlots setIsSmallNav={setIsSmallNav} />}
             />
           </Route>
         </Routes>

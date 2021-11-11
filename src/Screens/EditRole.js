@@ -13,13 +13,18 @@ export default function AddRole({ setIsSmallNav }) {
         <div className="container__header__heading">Role</div>
         <div className="container__header__btns">
           <Button label="Create" style={{ marginRight: "1em" }} />
+          <Button
+            label="Create"
+            variant="secondary"
+            style={{ marginRight: "1em" }}
+          />
         </div>
       </div>
       <div className="table__container">
         <form style={{ width: "40%" }} className="table__container__wrapper">
-          <div className="table__container__heading">Add New Role</div>
-          <InputBox placeholder="Role Name" required />
-          <InputBox id="1" variant="checkbox" placeholder="Manager" />
+          <div className="table__container__heading">Edit Role</div>
+          <InputBox placeholder="Role Name" required autoFocus />
+          <InputBox variant="checkbox" placeholder="Manager" />
           <InputBox variant="checkbox" placeholder="Manager" />
           <InputBox variant="checkbox" placeholder="Manager2" />
           <InputBox variant="checkbox" placeholder="Manager3" />
