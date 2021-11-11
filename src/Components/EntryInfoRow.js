@@ -17,7 +17,14 @@ function EntryInfoRowData({ value, variant, label }) {
       </div>
     );
   } else {
-    return <div className="entry__info__row__text">{value}</div>;
+    return (
+      <div
+        className="entry__info__row__text"
+        style={value === "Pending" ? { color: "#FB6A3B" } : null}
+      >
+        {value}
+      </div>
+    );
   }
 }
 
