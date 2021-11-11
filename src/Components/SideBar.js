@@ -306,7 +306,160 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
             <InputBox type="password" placeholder="Password" />
             <Button label="Save" type="submit" />
           </form>
-        ) : null}
+        ) : (
+          <div className="sidebar__queries__container">
+            <div className="sidebar__queries__title">Title of query</div>
+            <div className="sidebar__queries__heading">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.It is a
+              long established fact that a reader will be distracted by the
+              readable content of a page when looking at its layout.
+            </div>
+            <div className="sidebar__queries__title">Title of query</div>
+            <div className="sidebar__queries__heading">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.It is a
+              long established fact that a reader will be distracted by the
+              readable content of a page when looking at its layout.
+            </div>
+            <a href="" className="sidebar__queries__container__links">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                stroke="currentColor"
+              >
+                <g id="help-circle" transform="translate(0.5 0.5)">
+                  <circle
+                    id="Ellipse_307"
+                    data-name="Ellipse 307"
+                    cx="8"
+                    cy="8"
+                    r="8"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  />
+                  <path
+                    id="Path_9211"
+                    data-name="Path 9211"
+                    d="M9.09,8.584a2.378,2.378,0,0,1,4.62.793c0,1.585-2.378,2.378-2.378,2.378"
+                    transform="translate(-3.471 -3.036)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  />
+                  <line
+                    id="Line_12"
+                    data-name="Line 12"
+                    transform="translate(8 12)"
+                    fill="none"
+                    stroke="#53585e"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  />
+                </g>
+              </svg>
+              Get Help
+            </a>
+            <a href="" className="sidebar__queries__container__links">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                stroke="currentColor"
+              >
+                <g id="life-buoy" transform="translate(0.5 0.446)">
+                  <circle
+                    id="Ellipse_308"
+                    data-name="Ellipse 308"
+                    cx="8"
+                    cy="8"
+                    r="8"
+                    transform="translate(0 0.054)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  />
+                  <circle
+                    id="Ellipse_309"
+                    data-name="Ellipse 309"
+                    cx="3"
+                    cy="3"
+                    r="3"
+                    transform="translate(5 5.054)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  />
+                  <line
+                    id="Line_13"
+                    data-name="Line 13"
+                    x2="3.36"
+                    y2="3.36"
+                    transform="translate(2.322 2.322)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  />
+                  <line
+                    id="Line_14"
+                    data-name="Line 14"
+                    x2="3.36"
+                    y2="3.36"
+                    transform="translate(10.168 10.168)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  />
+                  <line
+                    id="Line_15"
+                    data-name="Line 15"
+                    y1="3.36"
+                    x2="3.36"
+                    transform="translate(10.168 2.322)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  />
+                  <line
+                    id="Line_16"
+                    data-name="Line 16"
+                    y1="2.798"
+                    x2="2.798"
+                    transform="translate(10.168 2.885)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  />
+                  <line
+                    id="Line_17"
+                    data-name="Line 17"
+                    y1="3.36"
+                    x2="3.36"
+                    transform="translate(2.322 10.168)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  />
+                </g>
+              </svg>
+              Feedback
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

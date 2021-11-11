@@ -280,6 +280,39 @@ p {
   width: 100%;
   justify-content: flex-start;
 }
+.sidebar__queries__container {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__queries__title {
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.sidebar__queries__heading {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 2em;
+}
+.sidebar__queries__container__links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  margin-top: 1em;
+}
+.sidebar__queries__container__links:hover {
+  transition: 200ms ease-in-out;
+  color: $primary;
+}
+.sidebar__queries__container__links svg {
+  width: 17px;
+  height: 17px;
+  margin-right: 6px;
+}
 .nav__bar__content::-webkit-scrollbar,
 .notification__panel__content::-webkit-scrollbar {
   width: 12px;
