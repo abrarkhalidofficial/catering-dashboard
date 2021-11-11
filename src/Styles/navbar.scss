@@ -1,6 +1,6 @@
 .nav__bar {
-  width: fit-content;
-  min-width: 15vw;
+  width: 12vw;
+  min-width: 12vw;
   height: 100vh;
   position: relative;
 }
@@ -62,8 +62,8 @@
   padding-top: 1em;
 }
 .nav__bar__small {
-  width: 85px;
-  min-width: 85px;
+  width: 83px;
+  min-width: 83px;
 }
 .nav__bar__small .side__bar__content__form__logo {
   font-size: 10px;
@@ -95,4 +95,9 @@
   .nav__bar__content__link__content
   span {
   display: flex;
+}
+@media (max-width: 1440px) {
+  .nav__bar {
+    width: 15vw;
+  }
 }

@@ -31,7 +31,7 @@ function Main({ setIsLogedin, isSmallNav, isLogedin }) {
   return (
     <>
       <NavBar setIsLogedin={setIsLogedin} isSmallNav={isSmallNav} />
-      <div className="main">
+      <div className="main" style={isSmallNav ? { maxWidth: "100vw" } : null}>
         <Outlet />
       </div>
       {isSmallNav ? null : (
