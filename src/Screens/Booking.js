@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Components/Button";
+import InputBox from "../Components/InputBox";
 
 export default function Booking() {
   return (
@@ -7,6 +8,7 @@ export default function Booking() {
       <div className="container__header">
         <div className="container__header__heading">Bookings</div>
         <div className="container__header__btns">
+          <InputBox placeholder="Search" variant="search" />
           <Button label="Add" style={{ marginRight: "1em" }} />
           <Button label="Delete" variant="secondary" />
         </div>

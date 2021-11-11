@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../Components/Button";
 import EntryHeadingRow from "../Components/EntryHeadingRow";
 import EntryInfoRow from "../Components/EntryInfoRow";
+import InputBox from "../Components/InputBox";
 
 export default function Slots() {
   const tableHeadingRow = [
@@ -20,6 +21,7 @@ export default function Slots() {
       <div className="container__header">
         <div className="container__header__heading">Slots</div>
         <div className="container__header__btns">
+          <InputBox placeholder="Search" variant="search" />
           <Button label="Add" style={{ marginRight: "1em" }} />
           <Button label="Delete" variant="secondary" />
         </div>

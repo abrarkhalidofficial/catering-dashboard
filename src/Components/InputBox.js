@@ -6,6 +6,7 @@ export default function InputBox({
   required,
   autoFocus,
   variant,
+  svg,
 }) {
   if (variant === "checkbox") {
     return (
@@ -25,6 +26,33 @@ export default function InputBox({
           required={required}
         />
         <label htmlFor={"input__box" + placeholder}>{placeholder}</label>
+      </div>
+    );
+  } else if (variant === "search") {
+    return (
+      <div className="input__box__search">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-search"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          type={type}
+          className="input__box__search__field"
+          placeholder={placeholder}
+          required={required}
+          autoFocus={autoFocus}
+        />
       </div>
     );
   } else {
