@@ -17,7 +17,7 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
           <form
             onSubmit={() => {
               navigate("/dashboard");
-              setIsLogedin(false);
+              setIsLogedin(true);
             }}
             className="side__bar__content__form"
           >

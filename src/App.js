@@ -14,7 +14,7 @@ import Slabs from "./Screens/Slabs";
 import Slots from "./Screens/Slots";
 import Booking from "./Screens/Booking";
 
-function Main({ isLogedin, setIsLogedin, isSmallNav }) {
+function Main({ setIsLogedin, isSmallNav }) {
   return (
     <>
       <NavBar setIsLogedin={setIsLogedin} isSmallNav={isSmallNav} />
@@ -23,7 +23,8 @@ function Main({ isLogedin, setIsLogedin, isSmallNav }) {
   );
 }
 function App() {
-  const [isLogedin, setIsLogedin] = useState(true);
+  const [isLogedin, setIsLogedin] = useState(false);
+  const [isOnUserProfile, setIsOnUserProfile] = useState(false);
   const [isSmallNav, setIsSmallNav] = useState(false);
 
   return (
@@ -83,7 +84,14 @@ function App() {
             />
           </Route>
         </Routes>
-        <SideBar isLogedin={isLogedin} setIsLogedin={setIsLogedin} />
+        {isSmallNav ? null : (
+          <SideBar
+            isLogedin={isLogedin}
+            setIsLogedin={setIsLogedin}
+            isOnUserProfile={isOnUserProfile}
+            setIsOnUserProfile={setIsOnUserProfile}
+          />
+        )}
       </div>
     </BrowserRouter>
   );
