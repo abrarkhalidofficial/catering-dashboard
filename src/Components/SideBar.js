@@ -6,10 +6,15 @@ import { useNavigate } from "react-router-dom";
 import IconBtn from "./IconBtn";
 import userPic from "../Assets/userPic.png";
 
-function Avatar({ userPic, onClick }) {
+function Avatar({ userPic, onClick, style }) {
   return (
     <button className="avatar__btn" onClick={onClick}>
-      <img src={userPic} alt="userPic" className="avatar__btn__img" />
+      <img
+        src={userPic}
+        alt="userPic"
+        style={style}
+        className="avatar__btn__img"
+      />
     </button>
   );
 }
@@ -167,6 +172,7 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                   onClick={() => {
                     setIsInPanel(false);
                     setIsOnNotificationPenel(false);
+                    setIsOnUserProfile(false);
                   }}
                 />
               ) : (
@@ -195,6 +201,7 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     userPic={userPic}
                     onClick={() => {
                       setIsInPanel(true);
+                      setIsOnUserProfile(true);
                     }}
                   />
                 </>
@@ -276,6 +283,29 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
               ))}
             </div>
           </div>
+        ) : isOnUserProfile ? (
+          <form
+            onSubmit={() => {
+              setIsOnUserProfile(false);
+              setIsInPanel(false);
+            }}
+            className="side__bar__content__form"
+          >
+            <div className="side__bar__content__form__input">
+              <input
+                type="file"
+                name="side__bar__content__form__input__file"
+                id="side__bar__content__form__input__file"
+                className="side__bar__content__form__input__file"
+              />
+              <Avatar userPic={userPic} style={{ width: 100, height: 100 }} />
+            </div>
+            <InputBox type="text" placeholder="Vendor Name" autoFocus />
+            <InputBox type="email" placeholder="Email Address" />
+            <InputBox type="password" placeholder="Confirm Password" />
+            <InputBox type="password" placeholder="Password" />
+            <Button label="Save" type="submit" />
+          </form>
         ) : null}
       </div>
     </div>
