@@ -24,8 +24,9 @@ function EntryInfoRowData({ value, variant, label }) {
 export default function EntryInfoRow({ tableEntryInfoRow, path }) {
   return (
     <Link to={path ? path : ""} className="entry__info__row">
-      {tableEntryInfoRow.map((item) => (
+      {tableEntryInfoRow.map((item, i) => (
         <EntryInfoRowData
+          key={i}
           value={item.info}
           variant={
             item.type === "btn" ? "btn" : item.type === "img" ? "img" : null

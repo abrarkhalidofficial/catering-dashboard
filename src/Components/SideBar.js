@@ -19,7 +19,7 @@ function Avatar({ userPic, onClick, style }) {
   );
 }
 
-export default function SideBar({ isLogedin, setIsLogedin }) {
+export default function SideBar({ isLogedin }) {
   const navigate = useNavigate();
   const [isInPanel, setIsInPanel] = useState(false);
   const [isOnUserProfile, setIsOnUserProfile] = useState(false);
@@ -130,12 +130,11 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
       info: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
   ];
-  console.log(isLogedin);
   return (
     <div className="side__bar">
       <div className="side__bar__header">
         <div className="side__bar__header__left">
-          {isLogedin ? null : (
+          {isLogedin ? (
             <>
               {isInPanel ? (
                 <IconBtn
@@ -152,9 +151,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                           transform="translate(5 12)"
                           fill="none"
                           stroke="#fb6a3b"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                         />
                         <path
                           id="Path_9210"
@@ -162,9 +161,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                           d="M12,19,5,12l7-7"
                           fill="none"
                           stroke="#fb6a3b"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                         />
                       </g>
                     </svg>
@@ -207,37 +206,17 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                 </>
               )}
             </>
-          )}
+          ) : null}
         </div>
         <ThemeToggleBtn />
       </div>
       <div className="side__bar__content">
-        {isLogedin ? (
-          <form
-            onSubmit={() => {
-              navigate("/dashboard");
-              setIsLogedin(true);
-            }}
-            className="side__bar__content__form"
-          >
-            <div className="side__bar__content__form__logo">Bulevard</div>
-            <InputBox
-              type="email"
-              placeholder="Email Address"
-              required
-              autoFocus
-            />
-            <InputBox type="password" placeholder="Password" required />
-            <InputBox variant="checkbox" placeholder="Remember" />
-            {/* <Button label="Login" variant="secondary" onClick={() => {}} /> */}
-            <Button label="Login" type="submit" />
-          </form>
-        ) : isOnNotificationPenel ? (
+        {isOnNotificationPenel ? (
           <div className="notification__panel">
             <button className="notification__panel__btn">CLear All</button>
             <div className="notification__panel__content">
-              {notifications.map((notification) => (
-                <div className="notification__panel__entry">
+              {notifications.map((notification, i) => (
+                <div className="notification__panel__entry" key={i}>
                   <button className="notification__panel__entry__btn">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -254,9 +233,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                           transform="translate(0.4 0.4)"
                           fill="none"
                           stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="1"
                         />
                         <line
                           id="Line_10"
@@ -266,9 +245,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                           transform="translate(0.4 0.4)"
                           fill="none"
                           stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="1"
                         />
                       </g>
                     </svg>
@@ -338,9 +317,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     cy="8"
                     r="8"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
                   />
                   <path
                     id="Path_9211"
@@ -348,9 +327,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     d="M9.09,8.584a2.378,2.378,0,0,1,4.62.793c0,1.585-2.378,2.378-2.378,2.378"
                     transform="translate(-3.471 -3.036)"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
                   />
                   <line
                     id="Line_12"
@@ -358,9 +337,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     transform="translate(8 12)"
                     fill="none"
                     stroke="#53585e"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
                   />
                 </g>
               </svg>
@@ -383,9 +362,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     r="8"
                     transform="translate(0 0.054)"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
                   />
                   <circle
                     id="Ellipse_309"
@@ -395,9 +374,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     r="3"
                     transform="translate(5 5.054)"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
                   />
                   <line
                     id="Line_13"
@@ -406,9 +385,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     y2="3.36"
                     transform="translate(2.322 2.322)"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
                   />
                   <line
                     id="Line_14"
@@ -417,9 +396,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     y2="3.36"
                     transform="translate(10.168 10.168)"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
                   />
                   <line
                     id="Line_15"
@@ -428,9 +407,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     x2="3.36"
                     transform="translate(10.168 2.322)"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
                   />
                   <line
                     id="Line_16"
@@ -439,9 +418,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     x2="2.798"
                     transform="translate(10.168 2.885)"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
                   />
                   <line
                     id="Line_17"
@@ -450,9 +429,9 @@ export default function SideBar({ isLogedin, setIsLogedin }) {
                     x2="3.36"
                     transform="translate(2.322 10.168)"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1"
                   />
                 </g>
               </svg>

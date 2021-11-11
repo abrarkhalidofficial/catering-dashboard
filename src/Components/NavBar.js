@@ -415,18 +415,18 @@ export default function NavBar({ isSmallNav }) {
                     data-name="Path 9207"
                     d="M2,3H8a4,4,0,0,1,4,4V21a3,3,0,0,0-3-3H2Z"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                   />
                   <path
                     id="Path_9208"
                     data-name="Path 9208"
                     d="M22,3H16a4,4,0,0,0-4,4V21a3,3,0,0,1,3-3h7Z"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                   />
                 </g>
               </svg>

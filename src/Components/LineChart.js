@@ -1,10 +1,8 @@
 import React, { PureComponent } from "react";
 import {
-  Label,
   LineChart,
   Line,
   CartesianGrid,
-  XAxis,
   YAxis,
   Tooltip,
   ReferenceArea,
@@ -120,18 +118,7 @@ export default class CustomeLineChart extends PureComponent {
   }
 
   render() {
-    const {
-      data,
-      barIndex,
-      left,
-      right,
-      refAreaLeft,
-      refAreaRight,
-      top,
-      bottom,
-      top2,
-      bottom2,
-    } = this.state;
+    const { data, refAreaLeft, refAreaRight } = this.state;
 
     return (
       <ResponsiveContainer width="100%" minHeight={250} height="90%">

@@ -1,5 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import React, { useState } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Outlet,
+  useNavigate,
+} from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import SideBar from "./Components/SideBar";
 import Dashboard from "./Screens/Dashboard";
@@ -21,13 +27,16 @@ import EditSlots from "./Screens/EditSlots";
 import AddSlabs from "./Screens/AddSlabs";
 import EditSlabs from "./Screens/EditSlabs";
 
-function Main({ setIsLogedin, isSmallNav }) {
+function Main({ setIsLogedin, isSmallNav, isLogedin }) {
   return (
     <>
       <NavBar setIsLogedin={setIsLogedin} isSmallNav={isSmallNav} />
       <div className="main">
         <Outlet />
       </div>
+      {isSmallNav ? null : (
+        <SideBar isLogedin={isLogedin} setIsLogedin={setIsLogedin} />
+      )}
     </>
   );
 }
@@ -120,9 +129,6 @@ function App() {
             />
           </Route>
         </Routes>
-        {isSmallNav ? null : (
-          <SideBar isLogedin={isLogedin} setIsLogedin={setIsLogedin} />
-        )}
       </div>
     </BrowserRouter>
   );

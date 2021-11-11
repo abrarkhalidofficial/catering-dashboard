@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import loginImg from "../Assets/loginImg.png";
+import LoginForm from "../Components/LoginForm";
 
 export default function Login({ setIsLogedin }) {
   useEffect(() => {
@@ -9,6 +10,7 @@ export default function Login({ setIsLogedin }) {
     <div className="login__container">
       <div className="login__container__img__wrapper"></div>
       <img src={loginImg} alt="loginImg" className="login__container__img" />
+      <LoginForm setIsLogedin={setIsLogedin} />
     </div>
   );
 }
