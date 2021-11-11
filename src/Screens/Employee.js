@@ -27,6 +27,7 @@ export default function Employee({ setIsSmallNav }) {
     { info: "Manager" },
     { info: "33105-123456-2" },
   ];
+
   return (
     <div className="container">
       <div className="container__header">
@@ -39,6 +40,32 @@ export default function Employee({ setIsSmallNav }) {
       </div>
       <div className="table__container">
         <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} path="/" />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
         <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
         <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
         <EntryInfoRow tableEntryInfoRow={tableInfoRow} />

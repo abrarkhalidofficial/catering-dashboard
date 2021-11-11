@@ -25,7 +25,9 @@ function Main({ setIsLogedin, isSmallNav }) {
   return (
     <>
       <NavBar setIsLogedin={setIsLogedin} isSmallNav={isSmallNav} />
-      <Outlet />
+      <div className="main">
+        <Outlet />
+      </div>
     </>
   );
 }
