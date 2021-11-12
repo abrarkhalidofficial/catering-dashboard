@@ -163,7 +163,7 @@ export default function Plans({ setIsSmallNav }) {
           <CatagoryCard />
         </div>
       </div>
-      <div className="container" style={{ width: "50%" }}>
+      <div className="container" style={{ width: "55%" }}>
         <div className="container__header">
           <div className="container__header__heading">Catagories</div>
           <div className="container__header__btns">
@@ -210,7 +210,7 @@ export default function Plans({ setIsSmallNav }) {
           </div>
         </div>
       </div>
-      <div className="container" style={{ maxWidth: "24%" }}>
+      <div className="container" style={{ maxWidth: "25%" }}>
         <div className="container__header">
           <div className="container__header__heading">Catagories</div>
           <div className="container__header__btns">
