@@ -6,7 +6,7 @@ import InputBox from "../Components/InputBox";
 
 export default function Booking({ setIsSmallNav }) {
   useEffect(() => {
-    setIsSmallNav(false);
+    setIsSmallNav(true);
   }, []);
   const tableHeadingRow = [
     { heading: "Branch ID" },

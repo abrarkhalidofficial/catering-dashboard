@@ -39,7 +39,7 @@ export default function InputBox({
   } else if (variant === "dropdown") {
     return (
       <div className="input__box__dropdown" style={style}>
-        <Select options={options} placeholder={placeholder} />
+        <Select options={options} placeholder={placeholder} isMulti={isMulti} />
       </div>
     );
   } else if (variant === "search") {

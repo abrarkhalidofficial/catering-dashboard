@@ -24,7 +24,10 @@ function NavBarLink({ svg, title, path, defaultChecked }) {
 }
 export default function NavBar({ isSmallNav }) {
   return (
-    <div className={isSmallNav ? "nav__bar nav__bar__small" : "nav__bar"}>
+    <div
+      className={isSmallNav ? "nav__bar nav__bar__small" : "nav__bar"}
+      style={isSmallNav ? { width: "50px" } : null}
+    >
       <img src={navBar} alt="navBar" className="nav__bar__img" />
       <div className="nav__bar__content">
         <div className="side__bar__content__form__logo">Bulevard</div>
@@ -216,7 +219,7 @@ export default function NavBar({ isSmallNav }) {
               </svg>
             }
           />
-            <NavBarLink
+          <NavBarLink
             path="/dashboard/role"
             title="Role"
             svg={
@@ -394,7 +397,6 @@ export default function NavBar({ isSmallNav }) {
               </svg>
             }
           />
-        
         </div>
         <div className="nav__bar__content__logout">
           <NavBarLink

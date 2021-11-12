@@ -390,7 +390,7 @@ export default function Catagory({ setIsSmallNav }) {
             <Button label="Delete" variant="secondary" />
           </div>
         </div>
-        <div className="table__container">
+        <div className="table__container" style={{ marginRight: "2em" }}>
           <img
             src={itemdetailpic}
             alt="itemdetailpic"

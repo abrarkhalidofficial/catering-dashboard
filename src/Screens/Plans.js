@@ -4,10 +4,11 @@ import InputBox from "../Components/InputBox";
 import placeholderImg from "../Assets/placeholderImg.png";
 import EntryHeadingRow from "../Components/EntryHeadingRow";
 import EntryInfoRow from "../Components/EntryInfoRow";
-function CatagoryCard() {
+function PlanCard({ defaultChecked }) {
   return (
     <div className="plans__card">
       <input
+        defaultChecked={defaultChecked}
         type="radio"
         name="plans__card__input"
         className="plans__card__input"
@@ -95,11 +96,32 @@ function CatagoryCard() {
     </div>
   );
 }
-function SubCatagoryCard() {
-  return <div className=""></div>;
-}
-function ItemCard() {
-  return <div className=""></div>;
+function ItemCard({ defaultChecked }) {
+  return (
+    <div className="plans__card">
+      <input
+        defaultChecked={defaultChecked}
+        type="radio"
+        name="items__card__input"
+        className="plans__card__input"
+      />
+      <div className="plans__card__content">
+        <img
+          src={placeholderImg}
+          alt="item__img"
+          className="plans__card__content__img"
+        />
+        <div className="plans__card__content__info">
+          <div className="plans__card__content__info__heading">Name</div>
+          <div className="plans__card__content__info__value">Bilal house</div>
+        </div>
+        <div className="plans__card__content__info">
+          <div className="plans__card__content__info__heading">Price</div>
+          <div className="plans__card__content__info__value">$45</div>
+        </div>
+      </div>
+    </div>
+  );
 }
 export default function Plans({ setIsSmallNav }) {
   useEffect(() => {
@@ -135,24 +157,31 @@ export default function Plans({ setIsSmallNav }) {
           style={{ marginLeft: "1.5em", height: "45px" }}
         />
         <div className="container__data">
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
+          <PlanCard defaultChecked={true} />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
         </div>
       </div>
       <div className="container" style={{ width: "55%" }}>
@@ -238,22 +267,30 @@ export default function Plans({ setIsSmallNav }) {
           style={{ marginLeft: "1.5em", marginBottom: ".5em" }}
         />
         <div className="container__data" style={{ maxHeight: "78%" }}>
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
+          <ItemCard defaultChecked={true} />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard defaultChecked={true} />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
         </div>
       </div>
     </div>

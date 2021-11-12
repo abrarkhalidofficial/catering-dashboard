@@ -145,7 +145,7 @@ li {
 .input__box__search {
   display: flex;
   align-items: center;
-  height: 43px;
+  min-height: 43px;
   background-color: var(--gray);
   padding: 0em 1em;
   border-radius: 50px;
@@ -313,6 +313,7 @@ li {
   overflow-y: auto;
   overflow-x: visible;
   height: 100%;
+  min-width: 100%;
   width: fit-content;
   padding-right: 1.5em;
 }
@@ -404,6 +405,7 @@ li {
 }
 .nav__bar__content::-webkit-scrollbar,
 .table__container::-webkit-scrollbar,
+.table__container__content::-webkit-scrollbar,
 .dashboard__container::-webkit-scrollbar,
 .container__wrapper .container__data::-webkit-scrollbar,
 .notification__panel__content::-webkit-scrollbar {
@@ -412,6 +414,7 @@ li {
 }
 .nav__bar__content::-webkit-scrollbar-thumb,
 .table__container::-webkit-scrollbar-thumb,
+.table__container__content::-webkit-scrollbar-thumb,
 .dashboard__container::-webkit-scrollbar-thumb,
 .container__wrapper .container__data::-webkit-scrollbar-thumb,
 .notification__panel__content::-webkit-scrollbar-thumb {
@@ -420,6 +423,7 @@ li {
 }
 .nav__bar__content::-webkit-scrollbar-track,
 .table__container::-webkit-scrollbar-track,
+.table__container__content::-webkit-scrollbar-track,
 .dashboard__container::-webkit-scrollbar-track,
 .container__wrapper .container__data::-webkit-scrollbar-track,
 .notification__panel__content::-webkit-scrollbar-track {
@@ -604,8 +608,6 @@ li {
 .plans__card__content__info {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   width: 100px;
 }
 .plans__card__content__info__heading {
