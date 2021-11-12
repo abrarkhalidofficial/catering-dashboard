@@ -14,7 +14,7 @@ import Login from "./Screens/Login";
 import Employee from "./Screens/Employee";
 import Customer from "./Screens/Customer";
 import Catagory from "./Screens/Catagory";
-import Items from "./Screens/Items";
+// import Items from "./Screens/Items";
 import Plans from "./Screens/Plans";
 import Slabs from "./Screens/Slabs";
 import Slots from "./Screens/Slots";
@@ -88,10 +88,10 @@ function App() {
               path="category"
               element={<Catagory setIsSmallNav={setIsSmallNav} />}
             />
-            <Route
+            {/* <Route
               path="items"
               element={<Items setIsSmallNav={setIsSmallNav} />}
-            />
+            /> */}
             <Route
               path="plans"
               element={<Plans setIsSmallNav={setIsSmallNav} />}

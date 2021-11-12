@@ -42,40 +42,42 @@ export default function Booking({ setIsSmallNav }) {
       </div>
       <div className="table__container">
         <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} path="/" />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <div className="table__container__content">
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} path="/" />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        </div>
       </div>
     </div>
   );

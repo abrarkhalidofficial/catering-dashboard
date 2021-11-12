@@ -305,8 +305,15 @@ li {
 .table__container {
   margin-left: 2em;
   max-width: 100%;
-  overflow: auto;
-  max-height: 80vh;
+  height: 88vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.table__container__content {
+  overflow-y: auto;
+  overflow-x: visible;
+  height: 100%;
+  width: fit-content;
   padding-right: 1.5em;
 }
 .table__container__header {
@@ -539,13 +546,6 @@ li {
 .catagory__card__input:checked ~ .catagory__card__content {
   background: linear-gradient(45deg, #ff8f6b, #c44e29);
   color: var(--white);
-}
-.table__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1.5em 1em;
-  margin-top: 2em;
 }
 .table__container__item__detail__img {
   border-radius: 10px;

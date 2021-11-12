@@ -159,7 +159,7 @@ export default function Plans({ setIsSmallNav }) {
         <div className="container__header">
           <div className="container__header__heading">Plan Details</div>
           <div className="container__header__btns">
-            <Button label="Add Item to Plan" />
+            <Button label="Add Item to Plan" style={{ width: "150px" }} />
           </div>
         </div>
         <div className="container__details">
@@ -197,16 +197,21 @@ export default function Plans({ setIsSmallNav }) {
             </a>
           </div>
         </div>
-        <div className="table__container" style={{ maxHeight: "50%" }}>
+        <div className="table__container">
           <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <div className="table__container__content">
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          </div>
         </div>
       </div>
       <div className="container" style={{ maxWidth: "25%" }}>

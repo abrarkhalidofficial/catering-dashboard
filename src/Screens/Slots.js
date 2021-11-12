@@ -31,14 +31,16 @@ export default function Slots({ setIsSmallNav }) {
       </div>
       <div className="table__container">
         <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <div className="table__container__content">
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        </div>
       </div>
     </div>
   );

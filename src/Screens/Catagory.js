@@ -318,7 +318,7 @@ export default function Catagory({ setIsSmallNav }) {
       </div>
       <div className="container">
         <div className="container__header">
-          <div className="container__header__heading">Catagories</div>
+          <div className="container__header__heading">Sub Catagories</div>
           <div className="container__header__btns">
             <Button label="Add" />
           </div>
@@ -349,7 +349,7 @@ export default function Catagory({ setIsSmallNav }) {
       </div>
       <div className="container">
         <div className="container__header">
-          <div className="container__header__heading">Catagories</div>
+          <div className="container__header__heading">Items</div>
           <div className="container__header__btns">
             <Button label="Add" />
           </div>
@@ -384,7 +384,7 @@ export default function Catagory({ setIsSmallNav }) {
       </div>
       <div className="container">
         <div className="container__header">
-          <div className="container__header__heading">Catagories</div>
+          <div className="container__header__heading">Item Details</div>
           <div className="container__header__btns">
             <Button label="Edit" />
             <Button label="Delete" variant="secondary" />
