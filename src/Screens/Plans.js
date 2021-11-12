@@ -6,27 +6,26 @@ import EntryHeadingRow from "../Components/EntryHeadingRow";
 import EntryInfoRow from "../Components/EntryInfoRow";
 function CatagoryCard() {
   return (
-    <div className="catagory__card">
+    <div className="plans__card">
       <input
         type="radio"
-        name="catagory__card__input"
-        className="catagory__card__input"
+        name="plans__card__input"
+        className="plans__card__input"
       />
-      <div className="catagory__card__content">
-        <img
-          src={placeholderImg}
-          alt="catagory__img"
-          className="catagory__card__content__img"
-        />
-        <div className="catagory__card__content__info">
-          <div className="catagory__card__content__info__heading">Name</div>
-          <div className="catagory__card__content__info__value">
-            Bilal house
-          </div>
-          <div className="catagory__card__content__info__heading">Add Ons</div>
-          <div className="catagory__card__content__info__value">Yes</div>
+      <div className="plans__card__content">
+        <div className="plans__card__content__info">
+          <div className="plans__card__content__info__heading">Name</div>
+          <div className="plans__card__content__info__value">Bilal house</div>
         </div>
-        <div className="catagory__card__content__btns">
+        <div className="plans__card__content__info">
+          <div className="plans__card__content__info__heading">Price</div>
+          <div className="plans__card__content__info__value">$45</div>
+        </div>
+        <div className="plans__card__content__info">
+          <div className="plans__card__content__info__heading">Branch</div>
+          <div className="plans__card__content__info__value">Main</div>
+        </div>
+        <div className="catagory__card__btns">
           <button className="catagory__card__content__btns__btn catagory__card__content__btns__primary">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.362 11.482">
               <path
@@ -107,27 +106,20 @@ export default function Plans({ setIsSmallNav }) {
     setIsSmallNav(true);
   }, []);
   const tableHeadingRow = [
-    { heading: "Branch ID" },
-    { heading: "Store ID" },
-    { heading: "Date" },
-    { heading: "Amount" },
-    { heading: "No. of People" },
+    { heading: "" },
+    { heading: "Name" },
     { heading: "Time" },
-    { heading: "Address" },
-    { heading: "Payment" },
+    { heading: "Max Booking" },
+    { heading: "Booked" },
   ];
 
   const tableInfoRow = [
-    { info: "Name" },
-    { info: "Name" },
-    { info: "12-1-2021" },
-    { info: "$24" },
-    { info: "371" },
-    { info: "02:00 Am to 02:00 PM" },
-    { info: "Makaan No.2 Iqbal colony Lohore" },
-    { info: "Pending" },
+    { type: "btn", label: "Edit" },
+    { info: "Fahad" },
+    { info: "12:00 AM to 2:00 PM" },
+    { info: "1234" },
+    { info: "321" },
   ];
-
   return (
     <div className="container__wrapper">
       <div className="container">
@@ -165,54 +157,61 @@ export default function Plans({ setIsSmallNav }) {
       </div>
       <div className="container" style={{ width: "55%" }}>
         <div className="container__header">
-          <div className="container__header__heading">Catagories</div>
+          <div className="container__header__heading">Plan Details</div>
           <div className="container__header__btns">
-            <Button label="Add" />
+            <Button label="Add Item to Plan" />
           </div>
         </div>
         <div className="container__details">
-          <div className="table__container">
-            <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} path="/" />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <div className="container__details__plan__heading__wrapper">
+            <div className="container__details__plan__heading">Name</div>
+            <div className="container__details__plan__heading">Price</div>
+            <div className="container__details__plan__heading">Catagory</div>
+            <div className="container__details__plan__heading">Branch</div>
+            <div className="container__details__plan__heading">Slab</div>
+            <div className="container__details__plan__heading">Discription</div>
           </div>
+          <div className="container__details__plan__detail__wrapper">
+            <div className="container__details__plan__heading plan__detail__bold">
+              Fahad Ayyaz
+            </div>
+            <div className="container__details__plan__heading plan__detail__bold">
+              $57
+            </div>
+            <div className="container__details__plan__heading plan__detail__bold">
+              Fast Food
+            </div>
+            <div className="container__details__plan__heading plan__detail__bold">
+              Bilal House
+            </div>
+            <div className="container__details__plan__heading plan__detail__bold">
+              500
+            </div>
+            <a className="container__details__plan__heading__discription__tag">
+              View Discription
+              <div className="container__details__plan__heading__discription__box">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.It
+                is a long established.
+              </div>
+            </a>
+          </div>
+        </div>
+        <div className="table__container" style={{ maxHeight: "50%" }}>
+          <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
         </div>
       </div>
       <div className="container" style={{ maxWidth: "25%" }}>
         <div className="container__header">
-          <div className="container__header__heading">Catagories</div>
+          <div className="container__header__heading">Items</div>
           <div className="container__header__btns">
             <Button label="Add" />
           </div>
@@ -233,8 +232,23 @@ export default function Plans({ setIsSmallNav }) {
           isMulti
           style={{ marginLeft: "1.5em", marginBottom: ".5em" }}
         />
-        <div className="container__data">
-          <ItemCard />
+        <div className="container__data" style={{ maxHeight: "78%" }}>
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
+          <CatagoryCard />
         </div>
       </div>
     </div>

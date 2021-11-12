@@ -216,6 +216,40 @@ export default function NavBar({ isSmallNav }) {
               </svg>
             }
           />
+            <NavBarLink
+            path="/dashboard/role"
+            title="Role"
+            svg={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21.5"
+                height="19.5"
+                viewBox="0 0 21.5 19.5"
+                stroke="currentColor"
+              >
+                <g id="book-open" transform="translate(-1.25 -2.25)">
+                  <path
+                    id="Path_9207"
+                    data-name="Path 9207"
+                    d="M2,3H8a4,4,0,0,1,4,4V21a3,3,0,0,0-3-3H2Z"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                  />
+                  <path
+                    id="Path_9208"
+                    data-name="Path 9208"
+                    d="M22,3H16a4,4,0,0,0-4,4V21a3,3,0,0,1,3-3h7Z"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                  />
+                </g>
+              </svg>
+            }
+          />
           <NavBarLink
             path="/dashboard/slabs"
             title="Slabs"
@@ -360,40 +394,7 @@ export default function NavBar({ isSmallNav }) {
               </svg>
             }
           />
-          <NavBarLink
-            path="/dashboard/role"
-            title="Role"
-            svg={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21.5"
-                height="19.5"
-                viewBox="0 0 21.5 19.5"
-                stroke="currentColor"
-              >
-                <g id="book-open" transform="translate(-1.25 -2.25)">
-                  <path
-                    id="Path_9207"
-                    data-name="Path 9207"
-                    d="M2,3H8a4,4,0,0,1,4,4V21a3,3,0,0,0-3-3H2Z"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                  />
-                  <path
-                    id="Path_9208"
-                    data-name="Path 9208"
-                    d="M22,3H16a4,4,0,0,0-4,4V21a3,3,0,0,1,3-3h7Z"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                  />
-                </g>
-              </svg>
-            }
-          />
+        
         </div>
         <div className="nav__bar__content__logout">
           <NavBarLink
