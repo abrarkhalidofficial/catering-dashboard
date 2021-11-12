@@ -153,7 +153,54 @@ li {
   color: var(--text-color);
   border: 1px solid var(--gray);
 }
-.input__box__search__field {
+.input__box__dropdown {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-height: 45px;
+  background-color: var(--gray);
+  padding: 0em 1em;
+  border-radius: 50px;
+  margin-right: 1em;
+  color: var(--text-color);
+  border: 1px solid var(--gray);
+  margin-bottom: 1em;
+}
+.input__box__dropdown .css-b62m3t-container {
+  width: 100%;
+}
+.input__box__dropdown .css-b62m3t-container .css-1s2u09g-control {
+  background-color: transparent;
+  border: none;
+}
+.input__box__dropdown .css-b62m3t-container .css-1pahdxg-control {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.input__box__dropdown .css-b62m3t-container .css-14el2xx-placeholder {
+  font-size: 14px;
+}
+.input__box__dropdown .css-b62m3t-container .css-qc6sy-singleValue {
+  font-size: 14px;
+  color: var(--text-color);
+}
+.input__box__dropdown .css-b62m3t-container > div:last-child {
+  background-color: var(--gray);
+}
+.input__box__dropdown .css-b62m3t-container > div:last-child * {
+  color: var(--text-color);
+  font-size: 14px;
+}
+.input__box__dropdown .css-b62m3t-container > div:last-child *:hover {
+  color: #242424;
+}
+.input__box__dropdown:focus-within {
+  border-color: $primary;
+}
+.input__box__search .input__box__search__field {
   width: 200px;
   flex: 1;
   height: 100%;

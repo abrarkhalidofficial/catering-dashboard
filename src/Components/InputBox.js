@@ -1,4 +1,5 @@
 import React from "react";
+import Select from "react-select";
 
 export default function InputBox({
   placeholder,
@@ -8,7 +9,13 @@ export default function InputBox({
   variant,
   svg,
   style,
+  isMulti,
 }) {
+  const options = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ];
   if (variant === "checkbox") {
     return (
       <div
@@ -27,6 +34,12 @@ export default function InputBox({
           required={required}
         />
         <label htmlFor={"input__box" + placeholder}>{placeholder}</label>
+      </div>
+    );
+  } else if (variant === "dropdown") {
+    return (
+      <div className="input__box__dropdown" style={style}>
+        <Select options={options} placeholder={placeholder} />
       </div>
     );
   } else if (variant === "search") {

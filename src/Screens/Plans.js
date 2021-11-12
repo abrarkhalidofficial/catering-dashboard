@@ -223,9 +223,15 @@ export default function Plans({ setIsSmallNav }) {
           style={{ marginLeft: "1.5em", height: "45px" }}
         />
         <InputBox
-          placeholder="dropdown"
-          variant="search"
-          style={{ marginLeft: "1.5em", height: "45px" }}
+          placeholder="Catagory"
+          variant="dropdown"
+          style={{ marginLeft: "1.5em", marginBottom: ".5em" }}
+        />
+        <InputBox
+          placeholder="Sub Catagory"
+          variant="dropdown"
+          isMulti
+          style={{ marginLeft: "1.5em", marginBottom: ".5em" }}
         />
         <div className="container__data">
           <ItemCard />
