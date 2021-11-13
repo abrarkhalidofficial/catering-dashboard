@@ -13,7 +13,11 @@ export default function AddEmployee({ setIsSmallNav }) {
       <div className="container__header">
         <div className="container__header__heading">Employee</div>
         <div className="container__header__btns">
-          <Button label="Save" style={{ marginRight: "1em" }} />
+          <Button
+            label="Save"
+            path="/dashboard/employee"
+            style={{ marginRight: "1em" }}
+          />
           <Button
             label="Delete"
             variant="secondary"

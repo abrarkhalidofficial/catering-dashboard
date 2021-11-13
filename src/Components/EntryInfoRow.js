@@ -7,7 +7,7 @@ function EntryInfoRowData({ value, variant, label, path }) {
   if (variant === "btn") {
     return (
       <div className="entry__info__row__text">
-        <Button label={label} path="/dashboard/edit-branch" />
+        <Button label={label} path={path} />
       </div>
     );
   } else if (variant === "img") {

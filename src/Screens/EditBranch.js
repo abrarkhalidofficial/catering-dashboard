@@ -13,7 +13,11 @@ export default function EditBranch({ setIsSmallNav }) {
       <div className="container__header">
         <div className="container__header__heading">Branch</div>
         <div className="container__header__btns">
-          <Button label="Save Changes" style={{ marginRight: "1em" }} />
+          <Button
+            label="Save Changes"
+            path="/dashboard/branch"
+            style={{ marginRight: "1em" }}
+          />
           <Button
             label="Delete Changes"
             variant="secondary"

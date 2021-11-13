@@ -14,7 +14,7 @@ export default function Role({ setIsSmallNav }) {
   ];
 
   const tableInfoRow = [
-    { type: "btn", label: "Edit" },
+    { type: "btn", label: "Edit", path: "/dashboard/edit-role" },
     { info: "658123056" },
     { info: "Manager" },
   ];
@@ -23,7 +23,11 @@ export default function Role({ setIsSmallNav }) {
       <div className="container__header">
         <div className="container__header__heading">Role</div>
         <div className="container__header__btns">
-          <Button label="Add" style={{ marginRight: "1em" }} />
+          <Button
+            label="Add"
+            path="/dashboard/add-role"
+            style={{ marginRight: "1em" }}
+          />
           <Button label="Delete" variant="secondary" />
         </div>
       </div>

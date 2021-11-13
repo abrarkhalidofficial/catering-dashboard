@@ -13,7 +13,11 @@ export default function AddBranch({ setIsSmallNav }) {
       <div className="container__header">
         <div className="container__header__heading">Branch</div>
         <div className="container__header__btns">
-          <Button label="Save" style={{ marginRight: "1em" }} />
+          <Button
+            label="Save"
+            path="/dashboard/branch"
+            style={{ marginRight: "1em" }}
+          />
         </div>
       </div>
       <div className="table__container">

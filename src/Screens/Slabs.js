@@ -17,7 +17,7 @@ export default function Slabs({ setIsSmallNav }) {
   ];
 
   const tableInfoRow = [
-    { type: "btn", label: "Edit" },
+    { type: "btn", label: "Edit", path: "/dashboard/edit-slab" },
     { info: "Fahad" },
     { info: "12:00 AM to 2:00 PM" },
     { info: "1234" },
@@ -29,7 +29,11 @@ export default function Slabs({ setIsSmallNav }) {
         <div className="container__header__heading">Slabs</div>
         <div className="container__header__btns">
           <InputBox placeholder="Search" variant="search" />
-          <Button label="Add" style={{ marginRight: "1em" }} />
+          <Button
+            label="Add"
+            path="/dashboard/add-slab"
+            style={{ marginRight: "1em" }}
+          />
           <Button label="Delete" variant="secondary" />
         </div>
       </div>
