@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../Components/Button";
 import InputBox from "../Components/InputBox";
 import placeholderImg from "../Assets/placeholderImg.png";
@@ -102,13 +102,16 @@ function PlanCard({ defaultChecked, setIsEditPlanOpen }) {
   );
 }
 function ItemCard({ defaultChecked }) {
+  const [checked, setChecked] = useState(false);
   return (
     <div className="plans__card">
       <input
-        defaultChecked={defaultChecked}
         type="radio"
-        name="items__card__input"
         className="plans__card__input"
+        checked={checked}
+        onClick={(e) => {
+          checked ? setChecked(false) : setChecked(true);
+        }}
       />
       <div className="plans__card__content">
         <img
