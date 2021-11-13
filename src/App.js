@@ -139,7 +139,17 @@ function App() {
             />
             <Route
               path="category"
-              element={<Catagory setIsSmallNav={setIsSmallNav} />}
+              element={
+                <Catagory
+                  setIsSmallNav={setIsSmallNav}
+                  setIsAddCatagoryOpen={setIsAddCatagoryOpen}
+                  setIsAddSubCatagoryOpen={setIsAddSubCatagoryOpen}
+                  setIsAddItemOpen={setIsAddItemOpen}
+                  setIsEditCatagoryOpen={setIsEditCatagoryOpen}
+                  setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+                  setIsEditItemOpen={setIsEditItemOpen}
+                />
+              }
             />
             {/* <Route
               path="items"

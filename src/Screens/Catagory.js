@@ -3,7 +3,7 @@ import Button from "../Components/Button";
 import InputBox from "../Components/InputBox";
 import placeholderImg from "../Assets/placeholderImg.png";
 import itemdetailpic from "../Assets/itemdetailpic.png";
-function CatagoryCard() {
+function CatagoryCard({ setIsEditCatagoryOpen }) {
   return (
     <div className="catagory__card">
       <input
@@ -26,7 +26,12 @@ function CatagoryCard() {
           <div className="catagory__card__content__info__value">Yes</div>
         </div>
         <div className="catagory__card__content__btns">
-          <button className="catagory__card__content__btns__btn catagory__card__content__btns__primary">
+          <button
+            className="catagory__card__content__btns__btn catagory__card__content__btns__primary"
+            onClick={() => {
+              setIsEditCatagoryOpen(true);
+            }}
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.362 11.482">
               <path
                 id="edit-2"
@@ -95,7 +100,7 @@ function CatagoryCard() {
     </div>
   );
 }
-function SubCatagoryCard() {
+function SubCatagoryCard({ setIsEditSubCatagoryOpen }) {
   return (
     <div className="catagory__card">
       <input
@@ -116,7 +121,12 @@ function SubCatagoryCard() {
           </div>
         </div>
         <div className="catagory__card__content__btns">
-          <button className="catagory__card__content__btns__btn catagory__card__content__btns__primary">
+          <button
+            className="catagory__card__content__btns__btn catagory__card__content__btns__primary"
+            onClick={() => {
+              setIsEditSubCatagoryOpen(true);
+            }}
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.362 11.482">
               <path
                 id="edit-2"
@@ -185,7 +195,7 @@ function SubCatagoryCard() {
     </div>
   );
 }
-function ItemCard() {
+function ItemCard({ setIsEditItemOpen }) {
   return (
     <div className="catagory__card">
       <input
@@ -208,7 +218,12 @@ function ItemCard() {
           <div className="catagory__card__content__info__value">$30</div>
         </div>
         <div className="catagory__card__content__btns">
-          <button className="catagory__card__content__btns__btn catagory__card__content__btns__primary">
+          <button
+            className="catagory__card__content__btns__btn catagory__card__content__btns__primary"
+            onClick={() => {
+              setIsEditItemOpen(true);
+            }}
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.362 11.482">
               <path
                 id="edit-2"
@@ -277,7 +292,15 @@ function ItemCard() {
     </div>
   );
 }
-export default function Catagory({ setIsSmallNav }) {
+export default function Catagory({
+  setIsSmallNav,
+  setIsAddCatagoryOpen,
+  setIsAddSubCatagoryOpen,
+  setIsAddItemOpen,
+  setIsEditCatagoryOpen,
+  setIsEditSubCatagoryOpen,
+  setIsEditItemOpen,
+}) {
   useEffect(() => {
     setIsSmallNav(true);
   }, []);
@@ -287,7 +310,12 @@ export default function Catagory({ setIsSmallNav }) {
         <div className="container__header">
           <div className="container__header__heading">Catagories</div>
           <div className="container__header__btns">
-            <Button label="Add" />
+            <Button
+              label="Add"
+              onClick={() => {
+                setIsAddCatagoryOpen(true);
+              }}
+            />
           </div>
         </div>
         <InputBox
@@ -296,31 +324,47 @@ export default function Catagory({ setIsSmallNav }) {
           style={{ marginLeft: "1.5em", height: "45px" }}
         />
         <div className="container__data">
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
-          <CatagoryCard />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
+          <CatagoryCard setIsEditCatagoryOpen={setIsEditCatagoryOpen} />
         </div>
       </div>
       <div className="container">
         <div className="container__header">
           <div className="container__header__heading">Sub Catagories</div>
           <div className="container__header__btns">
-            <Button label="Add" />
+            <Button
+              label="Add"
+              onClick={() => {
+                setIsAddSubCatagoryOpen(true);
+              }}
+            />
           </div>
         </div>
         <InputBox
@@ -329,29 +373,105 @@ export default function Catagory({ setIsSmallNav }) {
           style={{ marginLeft: "1.5em", height: "45px" }}
         />
         <div className="container__data">
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
-          <SubCatagoryCard />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
+          <SubCatagoryCard
+            setIsEditSubCatagoryOpen={setIsEditSubCatagoryOpen}
+          />
         </div>
       </div>
       <div className="container">
         <div className="container__header">
           <div className="container__header__heading">Items</div>
           <div className="container__header__btns">
-            <Button label="Add" />
+            <Button
+              label="Add"
+              onClick={() => {
+                setIsAddItemOpen(true);
+              }}
+            />
           </div>
         </div>
         <InputBox
@@ -360,33 +480,48 @@ export default function Catagory({ setIsSmallNav }) {
           style={{ marginLeft: "1.5em", height: "45px" }}
         />
         <div className="container__data">
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
+          <ItemCard setIsEditItemOpen={setIsEditItemOpen} />
         </div>
       </div>
       <div className="container">
         <div className="container__header">
           <div className="container__header__heading">Item Details</div>
           <div className="container__header__btns">
-            <Button label="Edit" />
+            <Button
+              label="Edit"
+              onClick={() => {
+                setIsEditItemOpen(true);
+              }}
+            />
             <Button label="Delete" variant="secondary" />
           </div>
         </div>
