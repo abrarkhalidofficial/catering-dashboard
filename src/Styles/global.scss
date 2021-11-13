@@ -815,6 +815,12 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+.popup__container__form__content__col {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
 .popup__container__form__content__btns {
   display: flex;
   align-items: center;
