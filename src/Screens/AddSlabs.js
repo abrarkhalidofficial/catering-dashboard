@@ -16,11 +16,13 @@ export default function AddSlabs({ setIsSmallNav }) {
         </div>
       </div>
       <div className="table__container">
-        <form style={{ width: "40%" }} className="table__container__wrapper">
+        <form className="table__container__wrapper">
           <div className="table__container__heading">Add New Slabs</div>
-          <InputBox placeholder="Rang From" required />
-          <InputBox placeholder="Rang To" required />
-          <InputBox placeholder="Discount" required />
+          <div className="table__container__wrapper__content__left">
+            <InputBox placeholder="Rang From" required />
+            <InputBox placeholder="Rang To" required />
+            <InputBox placeholder="Discount" required />
+          </div>
         </form>
       </div>
     </div>

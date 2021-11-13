@@ -139,11 +139,11 @@ function App() {
               element={<Slabs setIsSmallNav={setIsSmallNav} />}
             />
             <Route
-              path="add-slabs"
+              path="add-slab"
               element={<AddSlabs setIsSmallNav={setIsSmallNav} />}
             />
             <Route
-              path="edit-slabs"
+              path="edit-slab"
               element={<EditSlabs setIsSmallNav={setIsSmallNav} />}
             />
             <Route
@@ -151,11 +151,11 @@ function App() {
               element={<Slots setIsSmallNav={setIsSmallNav} />}
             />
             <Route
-              path="add-slots"
+              path="add-slot"
               element={<AddSlots setIsSmallNav={setIsSmallNav} />}
             />
             <Route
-              path="edit-slots"
+              path="edit-slot"
               element={<EditSlots setIsSmallNav={setIsSmallNav} />}
             />
           </Route>

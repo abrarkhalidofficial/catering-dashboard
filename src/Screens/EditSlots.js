@@ -21,11 +21,13 @@ export default function EditSlots({ setIsSmallNav }) {
         </div>
       </div>
       <div className="table__container">
-        <form style={{ width: "40%" }} className="table__container__wrapper">
+        <form className="table__container__wrapper">
           <div className="table__container__heading">Edit Slots</div>
-          <InputBox placeholder="Name" required />
-          <InputBox placeholder="Max Booking" required />
-          <InputBox placeholder="Start Time" required />
+          <div className="table__container__wrapper__content__left">
+            <InputBox placeholder="Name" required />
+            <InputBox placeholder="Max Booking" required />
+            <InputBox placeholder="Start Time" required />
+          </div>
         </form>
       </div>
     </div>
