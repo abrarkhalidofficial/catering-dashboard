@@ -56,6 +56,7 @@ export default function InputBox({
             id={placeholder}
             name={"input__box__file__box__input" + placeholder}
             className="input__box__file__box__input"
+            required={required}
             onChange={() => {
               setIsUploaded(true);
             }}
