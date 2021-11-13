@@ -40,6 +40,7 @@ import EditCategory from "./Screens/EditCatagory";
 import AddSubCategory from "./Screens/AddSubCategory";
 import EditSubCategory from "./Screens/EditSubCategory";
 import EmployeeDetails from "./Screens/EmployeeDetails";
+import BookingDetails from "./Screens/BookingDetails";
 
 function Main({ setIsLogedin, isSmallNav, isLogedin }) {
   return (
@@ -117,6 +118,10 @@ function App() {
             <Route
               path="booking"
               element={<Booking setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="booking-details"
+              element={<BookingDetails setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="employee"

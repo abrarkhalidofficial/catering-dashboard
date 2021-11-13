@@ -93,6 +93,9 @@ export default function CustomerDetails({ setIsSmallNav }) {
                 abc@gmail.com
               </div>
               <div className="container__details__heading plan__detail__bold">
+                0345-2343134
+              </div>
+              <div className="container__details__heading plan__detail__bold">
                 33015-2346432-1
               </div>
               <div className="container__details__heading plan__detail__bold">

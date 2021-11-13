@@ -43,40 +43,70 @@ export default function Booking({ setIsSmallNav }) {
       <div className="table__container">
         <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
         <div className="table__container__content">
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} path="/" />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
         </div>
       </div>
     </div>
