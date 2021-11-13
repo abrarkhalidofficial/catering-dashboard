@@ -36,14 +36,38 @@ export default function Customer({ setIsSmallNav }) {
       <div className="table__container">
         <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
         <div className="table__container__content">
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/customer-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/customer-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/customer-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/customer-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/customer-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/customer-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/customer-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/customer-details"
+          />
         </div>
       </div>
     </div>

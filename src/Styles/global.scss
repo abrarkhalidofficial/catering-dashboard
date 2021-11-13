@@ -713,12 +713,12 @@ li {
   align-items: center;
   padding: 2em;
 }
-.container__details__plan__heading__wrapper {
+.container__details__heading__wrapper {
   display: flex;
   flex-direction: column;
   width: 250px;
 }
-.container__details__plan__heading {
+.container__details__heading {
   font-size: 16px;
   color: var(--text-color);
   margin-bottom: 1em;
@@ -727,13 +727,13 @@ li {
   font-weight: bold;
 }
 
-.container__details__plan__heading__discription__tag {
+.container__details__heading__discription__tag {
   text-decoration: underline;
   color: $primary;
   cursor: pointer;
   position: relative;
 }
-.container__details__plan__heading__discription__box {
+.container__details__heading__discription__box {
   position: absolute;
   right: -50%;
   top: 150%;
@@ -747,8 +747,8 @@ li {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   display: none;
 }
-.container__details__plan__heading__discription__tag:hover
-  .container__details__plan__heading__discription__box {
+.container__details__heading__discription__tag:hover
+  .container__details__heading__discription__box {
   transition: 300ms ease-in-out;
   display: flex;
 }
@@ -853,6 +853,43 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+.container__details__with__background {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em;
+  background: var(--gray-dark);
+  border-radius: 10px;
+}
+.table__container__wrapper__content__upload__img__card {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+.table__container__wrapper__content__upload__img__card img {
+  width: 100px;
+  margin-top: 0.5em;
+}
+.customer__table__container__wrapper__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+.customer__table__container__wrapper__content__left {
+  width: 250px;
+}
+.customer__table__container__wrapper__content__pic {
+  border-radius: 300px;
+  width: 200px;
+  height: 200px;
+}
+
 @media (max-width: 1440px) {
   .side__bar {
     display: none;

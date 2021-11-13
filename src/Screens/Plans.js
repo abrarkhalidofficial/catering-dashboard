@@ -210,33 +210,33 @@ export default function Plans({
           </div>
         </div>
         <div className="container__details">
-          <div className="container__details__plan__heading__wrapper">
-            <div className="container__details__plan__heading">Name</div>
-            <div className="container__details__plan__heading">Price</div>
-            <div className="container__details__plan__heading">Catagory</div>
-            <div className="container__details__plan__heading">Branch</div>
-            <div className="container__details__plan__heading">Slab</div>
-            <div className="container__details__plan__heading">Discription</div>
+          <div className="container__details__heading__wrapper">
+            <div className="container__details__heading">Name</div>
+            <div className="container__details__heading">Price</div>
+            <div className="container__details__heading">Catagory</div>
+            <div className="container__details__heading">Branch</div>
+            <div className="container__details__heading">Slab</div>
+            <div className="container__details__heading">Discription</div>
           </div>
           <div className="container__details__plan__detail__wrapper">
-            <div className="container__details__plan__heading plan__detail__bold">
+            <div className="container__details__heading plan__detail__bold">
               Fahad Ayyaz
             </div>
-            <div className="container__details__plan__heading plan__detail__bold">
+            <div className="container__details__heading plan__detail__bold">
               $57
             </div>
-            <div className="container__details__plan__heading plan__detail__bold">
+            <div className="container__details__heading plan__detail__bold">
               Fast Food
             </div>
-            <div className="container__details__plan__heading plan__detail__bold">
+            <div className="container__details__heading plan__detail__bold">
               Bilal House
             </div>
-            <div className="container__details__plan__heading plan__detail__bold">
+            <div className="container__details__heading plan__detail__bold">
               500
             </div>
-            <a className="container__details__plan__heading__discription__tag">
+            <a className="container__details__heading__discription__tag">
               View Discription
-              <div className="container__details__plan__heading__discription__box">
+              <div className="container__details__heading__discription__box">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.It
                 is a long established.
