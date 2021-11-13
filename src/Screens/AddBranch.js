@@ -54,7 +54,7 @@ export default function AddBranch({ setIsSmallNav }) {
           </div>
           <InputBox placeholder="Rang From" required />
           <InputBox placeholder="Rang To" variant="file" />
-          <InputBox placeholder="Discount" required />
+          <InputBox placeholder="Discount" variant="location" />
         </form>
       </div>
     </div>

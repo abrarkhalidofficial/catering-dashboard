@@ -106,6 +106,26 @@ export default function InputBox({
         </div>
       </div>
     );
+  } else if (variant === "location") {
+    return (
+      <div className="input__box__location" style={style}>
+        <label htmlFor={placeholder} className="input__box__location__label">
+          {placeholder}
+        </label>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.231514637267!2d73.07316681559547!3d33.728829042150466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf66825ed077%3A0x74cce21c819c31d4!2sRoomy%20Signature%20Hotel!5e0!3m2!1sen!2s!4v1636784515844!5m2!1sen!2s"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <input
+          type={type}
+          className="input__box"
+          placeholder={placeholder}
+          required={required}
+          autoFocus={autoFocus}
+        />
+      </div>
+    );
   } else if (variant === "search") {
     return (
       <div className="input__box__search" style={style}>
