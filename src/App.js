@@ -35,6 +35,8 @@ import EditEmployee from "./Screens/EditEmployee";
 import EditPlan from "./Screens/EditPlan";
 import AddItem from "./Screens/AddItem";
 import EditItem from "./Screens/EditItem";
+import AddCategory from "./Screens/AddCategory";
+import EditCategory from "./Screens/EditCatagory";
 
 function Main({ setIsLogedin, isSmallNav, isLogedin }) {
   return (
@@ -54,8 +56,10 @@ function App() {
   const [isSmallNav, setIsSmallNav] = useState(false);
   const [isAddPlanOpen, setIsAddPlanOpen] = useState(false);
   const [isAddItemOpen, setIsAddItemOpen] = useState(false);
+  const [isAddCatagoryOpen, setIsAddCatagoryOpen] = useState(false);
   const [isEditPlanOpen, setIsEditPlanOpen] = useState(false);
   const [isEditItemOpen, setIsEditItemOpen] = useState(false);
+  const [isEditCatagoryOpen, setIsEditCatagoryOpen] = useState(false);
 
   return (
     <BrowserRouter>
@@ -64,6 +68,13 @@ function App() {
         {isEditPlanOpen ? <EditPlan closeOnClick={setIsEditPlanOpen} /> : null}
         {isAddItemOpen ? <AddItem closeOnClick={setIsAddItemOpen} /> : null}
         {isEditItemOpen ? <EditItem closeOnClick={setIsEditItemOpen} /> : null}
+        {isAddCatagoryOpen ? (
+          <AddCategory closeOnClick={setIsAddCatagoryOpen} />
+        ) : null}
+        {isEditCatagoryOpen ? (
+          <EditCategory closeOnClick={setIsEditCatagoryOpen} />
+        ) : null}
+
         <Routes>
           <Route path="/" element={<Login setIsLogedin={setIsLogedin} />} />
           <Route
