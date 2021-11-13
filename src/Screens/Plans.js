@@ -4,7 +4,7 @@ import InputBox from "../Components/InputBox";
 import placeholderImg from "../Assets/placeholderImg.png";
 import EntryHeadingRow from "../Components/EntryHeadingRow";
 import EntryInfoRow from "../Components/EntryInfoRow";
-function PlanCard({ defaultChecked }) {
+function PlanCard({ defaultChecked, setIsEditPlanOpen }) {
   return (
     <div className="plans__card">
       <input
@@ -27,7 +27,12 @@ function PlanCard({ defaultChecked }) {
           <div className="plans__card__content__info__value">Main</div>
         </div>
         <div className="catagory__card__btns">
-          <button className="catagory__card__content__btns__btn catagory__card__content__btns__primary">
+          <button
+            className="catagory__card__content__btns__btn catagory__card__content__btns__primary"
+            onClick={() => {
+              setIsEditPlanOpen(true);
+            }}
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.362 11.482">
               <path
                 id="edit-2"
@@ -123,7 +128,11 @@ function ItemCard({ defaultChecked }) {
     </div>
   );
 }
-export default function Plans({ setIsSmallNav }) {
+export default function Plans({
+  setIsSmallNav,
+  setIsAddPlanOpen,
+  setIsEditPlanOpen,
+}) {
   useEffect(() => {
     setIsSmallNav(true);
   }, []);
@@ -146,9 +155,14 @@ export default function Plans({ setIsSmallNav }) {
     <div className="container__wrapper">
       <div className="container">
         <div className="container__header">
-          <div className="container__header__heading">Catagories</div>
+          <div className="container__header__heading">Plans</div>
           <div className="container__header__btns">
-            <Button label="Add" />
+            <Button
+              label="Add"
+              onClick={() => {
+                setIsAddPlanOpen(true);
+              }}
+            />
           </div>
         </div>
         <InputBox
@@ -157,38 +171,39 @@ export default function Plans({ setIsSmallNav }) {
           style={{ marginLeft: "1.5em", height: "45px" }}
         />
         <div className="container__data">
-          <PlanCard defaultChecked={true} />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
-          <PlanCard />
+          <PlanCard
+            defaultChecked={true}
+            setIsEditPlanOpen={setIsEditPlanOpen}
+          />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
         </div>
       </div>
       <div className="container" style={{ width: "55%" }}>
         <div className="container__header">
-          <div className="container__header__heading">Plan Details</div>
-          <div className="container__header__btns">
-            <Button label="Add Item to Plan" style={{ width: "150px" }} />
+          <div
+            className="container__header__heading"
+            style={{ margin: ".5em 0em" }}
+          >
+            Plan Details
           </div>
         </div>
         <div className="container__details">
@@ -245,9 +260,11 @@ export default function Plans({ setIsSmallNav }) {
       </div>
       <div className="container" style={{ maxWidth: "25%" }}>
         <div className="container__header">
-          <div className="container__header__heading">Items</div>
-          <div className="container__header__btns">
-            <Button label="Add" />
+          <div
+            className="container__header__heading"
+            style={{ margin: ".5em 0em" }}
+          >
+            Items
           </div>
         </div>
         <InputBox

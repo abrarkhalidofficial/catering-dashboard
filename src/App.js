@@ -157,7 +157,13 @@ function App() {
             /> */}
             <Route
               path="plans"
-              element={<Plans setIsSmallNav={setIsSmallNav} />}
+              element={
+                <Plans
+                  setIsSmallNav={setIsSmallNav}
+                  setIsAddPlanOpen={setIsAddPlanOpen}
+                  setIsEditPlanOpen={setIsEditPlanOpen}
+                />
+              }
             />
             <Route
               path="role"
