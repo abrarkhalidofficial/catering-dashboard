@@ -17,7 +17,7 @@ export default function BookingDetails({ setIsSmallNav }) {
           <Button
             label="Decline"
             variant="secondary"
-            style={{ marginLeft: ".5em" }}
+            style={{ marginLeft: "1em" }}
           />
         </div>
       </div>
