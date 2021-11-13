@@ -45,40 +45,94 @@ export default function Employee({ setIsSmallNav }) {
       <div className="table__container">
         <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
         <div className="table__container__content">
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} path="/" />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/employee-details"
+          />
         </div>
       </div>
     </div>
