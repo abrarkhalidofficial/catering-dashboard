@@ -109,7 +109,7 @@ export default function InputBox({
   } else if (variant === "location") {
     return (
       <div className="input__box__location" style={style}>
-        <label htmlFor={placeholder} className="input__box__location__label">
+        <label htmlFor={placeholder} className="input__box__file__label">
           {placeholder}
         </label>
         <iframe
