@@ -74,6 +74,27 @@ li {
   border-color: $primary;
   border-width: 2px;
 }
+.input__box__textarea {
+  width: 100%;
+  background-color: var(--gray);
+  border: 1px solid var(--gray);
+  border-radius: 15px;
+  padding: 1em 1.5em;
+  font-size: 13px;
+  color: var(--text-color);
+  outline: none;
+  margin-bottom: 1.5em;
+  height: 150px;
+}
+.input__box__textarea:hover {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
+}
+.input__box__textarea:focus {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
+  border-width: 2px;
+}
 .input__box__checkbox {
   position: absolute; // take it out of document flow
   opacity: 0; // hide it
@@ -157,7 +178,7 @@ li {
   display: flex;
   align-items: center;
   flex: 1;
-  max-height: 45px;
+  min-height: 45px;
   background-color: var(--gray);
   padding: 0em 1em;
   border-radius: 50px;
@@ -725,6 +746,75 @@ li {
   .container__details__plan__heading__discription__box {
   transition: 300ms ease-in-out;
   display: flex;
+}
+.popup__container {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup__container__form {
+  border: 1px solid $primary;
+  border-radius: 15px;
+  background-color: var(--white);
+  width: 100%;
+  min-height: 400px;
+  max-width: 800px;
+  padding: 2em;
+}
+.popup__container__form__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.popup__container__form__header__heading {
+  font-size: 22px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+.popup__container__form__header__button {
+  width: 30px;
+  height: 30px;
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--text-color);
+}
+.popup__container__form__header__button svg {
+  width: 12px;
+  height: 12px;
+}
+.popup__container__form__header__button:hover {
+  color: $primary;
+  background-color: var(--gray);
+}
+.popup__container__form__content {
+  display: flex;
+  flex-direction: column;
+}
+.popup__container__form__content__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup__container__form__content__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 1440px) {
   .side__bar {

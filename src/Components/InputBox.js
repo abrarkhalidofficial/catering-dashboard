@@ -154,6 +154,21 @@ export default function InputBox({
         />
       </div>
     );
+  } else if (variant === "textarea") {
+    return (
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        type={type}
+        className="input__box__textarea"
+        placeholder={placeholder}
+        required={required}
+        autoFocus={autoFocus}
+        style={style}
+      ></textarea>
+    );
   } else {
     return (
       <input
@@ -162,6 +177,7 @@ export default function InputBox({
         placeholder={placeholder}
         required={required}
         autoFocus={autoFocus}
+        style={style}
       />
     );
   }
