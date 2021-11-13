@@ -31,6 +31,7 @@ import AddBranch from "./Screens/AddBranch";
 import EditBranch from "./Screens/EditBranch";
 import AddEmployee from "./Screens/AddEmployee";
 import AddPlan from "./Screens/AddPlan";
+import EditEmployee from "./Screens/EditEmployee";
 
 function Main({ setIsLogedin, isSmallNav, isLogedin }) {
   return (
@@ -93,6 +94,10 @@ function App() {
             <Route
               path="add-employee"
               element={<AddEmployee setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="edit-employee"
+              element={<EditEmployee setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="customer"

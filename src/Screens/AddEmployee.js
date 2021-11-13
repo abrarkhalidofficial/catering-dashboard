@@ -3,7 +3,7 @@ import Button from "../Components/Button";
 import IconBtn from "../Components/IconBtn";
 import InputBox from "../Components/InputBox";
 
-export default function AddBranch({ setIsSmallNav }) {
+export default function AddEmployee({ setIsSmallNav }) {
   useEffect(() => {
     setIsSmallNav(false);
   }, []);

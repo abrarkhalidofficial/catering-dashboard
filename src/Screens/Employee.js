@@ -34,7 +34,11 @@ export default function Employee({ setIsSmallNav }) {
         <div className="container__header__heading">Employee</div>
         <div className="container__header__btns">
           <InputBox placeholder="Search" variant="search" />
-          <Button label="Add" style={{ marginRight: "1em" }} />
+          <Button
+            label="Add"
+            path="/dashboard/add-employee"
+            style={{ marginRight: "1em" }}
+          />
           <Button label="Delete" variant="secondary" />
         </div>
       </div>

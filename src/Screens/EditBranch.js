@@ -22,7 +22,7 @@ export default function EditBranch({ setIsSmallNav }) {
         </div>
       </div>
       <div className="table__container">
-        <form style={{ width: "40%" }} className="table__container__wrapper">
+        <form className="table__container__wrapper">
           <div className="table__container__heading">
             <IconBtn
               type="button"
@@ -55,11 +55,13 @@ export default function EditBranch({ setIsSmallNav }) {
                 </svg>
               }
             />
-            Edit New Branch
+            Edit Branch
           </div>
-          <InputBox placeholder="Name" required />
-          <InputBox placeholder="Image" variant="file" />
-          <InputBox placeholder="Address" variant="location" />
+          <div className="table__container__wrapper__content__left">
+            <InputBox placeholder="Name" required />
+            <InputBox placeholder="Image" variant="file" />
+            <InputBox placeholder="Address" variant="location" />
+          </div>
         </form>
       </div>
     </div>
