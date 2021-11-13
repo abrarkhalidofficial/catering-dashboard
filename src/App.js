@@ -27,6 +27,8 @@ import EditSlots from "./Screens/EditSlots";
 import AddSlabs from "./Screens/AddSlabs";
 import EditSlabs from "./Screens/EditSlabs";
 import CustomerDetails from "./Screens/CustomerDetails";
+import AddBranch from "./Screens/AddBranch";
+import EditBranch from "./Screens/EditBranch";
 
 function Main({ setIsLogedin, isSmallNav, isLogedin }) {
   return (
@@ -67,6 +69,14 @@ function App() {
             <Route
               path="branch"
               element={<Branch setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="add-branch"
+              element={<AddBranch setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="edit-branch"
+              element={<EditBranch setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="booking"

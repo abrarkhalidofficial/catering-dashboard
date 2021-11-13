@@ -16,7 +16,7 @@ export default function Branch({ setIsSmallNav }) {
   ];
 
   const tableInfoRow = [
-    { type: "btn", label: "Edit" },
+    { type: "btn", label: "Edit", path: "/dashboard/edit-branch" },
     { type: "img" },
     { info: "House" },
     { info: "Makaan No.2 Iqbal colony Lohore" },
@@ -27,7 +27,11 @@ export default function Branch({ setIsSmallNav }) {
         <div className="container__header__heading">Branches</div>
         <div className="container__header__btns">
           <InputBox placeholder="Search" variant="search" />
-          <Button label="Add" style={{ marginRight: "1em" }} />
+          <Button
+            label="Add"
+            path="/dashboard/add-branch"
+            style={{ marginRight: "1em" }}
+          />
           <Button label="Delete" variant="secondary" />
         </div>
       </div>

@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import EntryImg from "../Assets/EntryImg.png";
 import Button from "./Button";
 
-function EntryInfoRowData({ value, variant, label }) {
+function EntryInfoRowData({ value, variant, label, path }) {
   if (variant === "btn") {
     return (
       <div className="entry__info__row__text">
-        <Button label={label} />
+        <Button label={label} path="/dashboard/edit-branch" />
       </div>
     );
   } else if (variant === "img") {
@@ -29,8 +29,18 @@ function EntryInfoRowData({ value, variant, label }) {
 }
 
 export default function EntryInfoRow({ tableEntryInfoRow, path }) {
+  const navigate = useNavigate();
   return (
-    <Link to={path ? path : ""} className="entry__info__row">
+    <button
+      onClick={
+        path
+          ? () => {
+              navigate(path);
+            }
+          : null
+      }
+      className="entry__info__row"
+    >
       {tableEntryInfoRow.map((item, i) => (
         <EntryInfoRowData
           key={i}
@@ -39,8 +49,9 @@ export default function EntryInfoRow({ tableEntryInfoRow, path }) {
             item.type === "btn" ? "btn" : item.type === "img" ? "img" : null
           }
           label={item.label}
+          path={item.path}
         />
       ))}
-    </Link>
+    </button>
   );
 }
