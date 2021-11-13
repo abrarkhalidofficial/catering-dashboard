@@ -32,6 +32,7 @@ import EditBranch from "./Screens/EditBranch";
 import AddEmployee from "./Screens/AddEmployee";
 import AddPlan from "./Screens/AddPlan";
 import EditEmployee from "./Screens/EditEmployee";
+import EditPlan from "./Screens/EditPlan";
 
 function Main({ setIsLogedin, isSmallNav, isLogedin }) {
   return (
@@ -50,11 +51,13 @@ function App() {
   const [isLogedin, setIsLogedin] = useState(false);
   const [isSmallNav, setIsSmallNav] = useState(false);
   const [isAddPlanOpen, setIsAddPlanOpen] = useState(false);
+  const [isEditPlanOpen, setIsEditPlanOpen] = useState(false);
 
   return (
     <BrowserRouter>
       <div className="App">
         {isAddPlanOpen ? <AddPlan closeOnClick={setIsAddPlanOpen} /> : null}
+        {isEditPlanOpen ? <EditPlan closeOnClick={setIsEditPlanOpen} /> : null}
         <Routes>
           <Route path="/" element={<Login setIsLogedin={setIsLogedin} />} />
           <Route
