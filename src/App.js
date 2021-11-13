@@ -29,6 +29,7 @@ import EditSlabs from "./Screens/EditSlabs";
 import CustomerDetails from "./Screens/CustomerDetails";
 import AddBranch from "./Screens/AddBranch";
 import EditBranch from "./Screens/EditBranch";
+import AddEmployee from "./Screens/AddEmployee";
 import AddPlan from "./Screens/AddPlan";
 
 function Main({ setIsLogedin, isSmallNav, isLogedin }) {
@@ -47,7 +48,8 @@ function Main({ setIsLogedin, isSmallNav, isLogedin }) {
 function App() {
   const [isLogedin, setIsLogedin] = useState(false);
   const [isSmallNav, setIsSmallNav] = useState(false);
-  const [isAddPlanOpen, setIsAddPlanOpen] = useState(true);
+  const [isAddPlanOpen, setIsAddPlanOpen] = useState(false);
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -87,6 +89,10 @@ function App() {
             <Route
               path="employee"
               element={<Employee setIsSmallNav={setIsSmallNav} />}
+            />
+            <Route
+              path="add-employee"
+              element={<AddEmployee setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="customer"

@@ -13,7 +13,7 @@ export default function AddBranch({ setIsSmallNav }) {
       <div className="container__header">
         <div className="container__header__heading">Branch</div>
         <div className="container__header__btns">
-          <Button label="Create" style={{ marginRight: "1em" }} />
+          <Button label="Save" style={{ marginRight: "1em" }} />
         </div>
       </div>
       <div className="table__container">
@@ -52,9 +52,9 @@ export default function AddBranch({ setIsSmallNav }) {
             />
             Add New Branch
           </div>
-          <InputBox placeholder="Rang From" required />
-          <InputBox placeholder="Rang To" variant="file" />
-          <InputBox placeholder="Discount" variant="location" />
+          <InputBox placeholder="Name" required />
+          <InputBox placeholder="Add Image" variant="file" />
+          <InputBox placeholder="Add Location" variant="location" />
         </form>
       </div>
     </div>
