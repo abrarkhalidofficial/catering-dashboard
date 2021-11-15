@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import navBar from "../Assets/navBar.png";
+import navBar from "../Assets/navBar.jpg";
 function NavBarLink({ svg, title, path, defaultChecked }) {
   const navigate = useNavigate();
   return (

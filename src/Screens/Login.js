@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import loginImg from "../Assets/loginImg.png";
+import loginImg from "../Assets/loginImg.jpg";
 import LoginForm from "../Components/LoginForm";
 
 export default function Login({ setIsLogedin }) {
