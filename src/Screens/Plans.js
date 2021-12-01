@@ -3,7 +3,7 @@ import Button from "../Components/Button";
 import InputBox from "../Components/InputBox";
 import placeholderImg from "../Assets/placeholderImg.png";
 
-function PlanCard({ defaultChecked, setIsEditPlanOpen }) {
+function PlanCard({ defaultChecked }) {
   return (
     <div className="plans__card">
       <input
@@ -224,9 +224,9 @@ export default function Plans({
           <div className="container__header__heading">Plans</div>
           <div className="container__header__btns">
             <Button
-              label="Add"
+              label="Edit"
               onClick={() => {
-                setIsAddPlanOpen(true);
+                setIsEditPlanOpen(true);
               }}
             />
           </div>
@@ -374,7 +374,7 @@ export default function Plans({
           style={{ marginLeft: "1.5em", marginBottom: ".5em" }}
         />
         <div className="container__data" style={{ maxHeight: "78%" }}>
-          <ItemCard defaultChecked={true} />
+          <ItemCard defaultChecked={true} setIsAddPlanOpen={setIsAddPlanOpen} />
           <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
           <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
           <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
