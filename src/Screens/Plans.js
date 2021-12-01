@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../Components/Button";
 import InputBox from "../Components/InputBox";
 import placeholderImg from "../Assets/placeholderImg.png";
-import EntryHeadingRow from "../Components/EntryHeadingRow";
-import EntryInfoRow from "../Components/EntryInfoRow";
+
 function PlanCard({ defaultChecked, setIsEditPlanOpen }) {
   return (
     <div className="plans__card">
@@ -16,87 +15,63 @@ function PlanCard({ defaultChecked, setIsEditPlanOpen }) {
       <div className="plans__card__content">
         <div className="plans__card__content__info">
           <div className="plans__card__content__info__heading">Name</div>
-          <div className="plans__card__content__info__value">Bilal house</div>
+          <div className="plans__card__content__info__heading">Price</div>
         </div>
         <div className="plans__card__content__info">
-          <div className="plans__card__content__info__heading">Price</div>
+          <div className="plans__card__content__info__value">John Doe</div>
           <div className="plans__card__content__info__value">$45</div>
         </div>
-        <div className="plans__card__content__info">
-          <div className="plans__card__content__info__heading">Branch</div>
-          <div className="plans__card__content__info__value">Main</div>
-        </div>
-        <div className="catagory__card__btns">
-          <button
-            className="catagory__card__content__btns__btn catagory__card__content__btns__primary"
-            onClick={() => {
-              setIsEditPlanOpen(true);
-            }}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.362 11.482">
+
+        <button className="catagory__card__content__btns__btn catagory__card__content__btns__secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.674 13.971">
+            <g id="trash-2" transform="translate(0.5 0.5)">
               <path
-                id="edit-2"
-                d="M9.839,2.6a1.478,1.478,0,0,1,2.09,2.09L4.874,11.749,2,12.533l.784-2.874Z"
-                transform="translate(-1.5 -1.552)"
+                id="Path_9212"
+                data-name="Path 9212"
+                d="M3,6H14.674"
+                transform="translate(-3 -3.406)"
                 fill="none"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="1"
               />
-            </svg>
-          </button>
-          <button className="catagory__card__content__btns__btn catagory__card__content__btns__secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.674 13.971">
-              <g id="trash-2" transform="translate(0.5 0.5)">
-                <path
-                  id="Path_9212"
-                  data-name="Path 9212"
-                  d="M3,6H14.674"
-                  transform="translate(-3 -3.406)"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1"
-                />
-                <path
-                  id="Path_9213"
-                  data-name="Path 9213"
-                  d="M14.08,4.594v9.08a1.3,1.3,0,0,1-1.3,1.3H6.3a1.3,1.3,0,0,1-1.3-1.3V4.594m1.946,0V3.3A1.3,1.3,0,0,1,8.243,2h2.594a1.3,1.3,0,0,1,1.3,1.3v1.3"
-                  transform="translate(-3.703 -2)"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1"
-                />
-                <line
-                  id="Line_18"
-                  data-name="Line 18"
-                  y2="3.948"
-                  transform="translate(4.737 5.866)"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1"
-                />
-                <line
-                  id="Line_19"
-                  data-name="Line 19"
-                  y2="3.948"
-                  transform="translate(7.105 5.866)"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1"
-                />
-              </g>
-            </svg>
-          </button>
-        </div>
+              <path
+                id="Path_9213"
+                data-name="Path 9213"
+                d="M14.08,4.594v9.08a1.3,1.3,0,0,1-1.3,1.3H6.3a1.3,1.3,0,0,1-1.3-1.3V4.594m1.946,0V3.3A1.3,1.3,0,0,1,8.243,2h2.594a1.3,1.3,0,0,1,1.3,1.3v1.3"
+                transform="translate(-3.703 -2)"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+              />
+              <line
+                id="Line_18"
+                data-name="Line 18"
+                y2="3.948"
+                transform="translate(4.737 5.866)"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+              />
+              <line
+                id="Line_19"
+                data-name="Line 19"
+                y2="3.948"
+                transform="translate(7.105 5.866)"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+              />
+            </g>
+          </svg>
+        </button>
       </div>
     </div>
   );
@@ -121,12 +96,114 @@ function ItemCard({ defaultChecked }) {
         />
         <div className="plans__card__content__info">
           <div className="plans__card__content__info__heading">Name</div>
-          <div className="plans__card__content__info__value">Bilal house</div>
+          <div className="plans__card__content__info__heading">Price</div>
         </div>
         <div className="plans__card__content__info">
-          <div className="plans__card__content__info__heading">Price</div>
+          <div className="plans__card__content__info__value">John Doe</div>
           <div className="plans__card__content__info__value">$45</div>
         </div>
+        <button className="catagory__card__content__btns__btn catagory__card__content__btns__secondary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-plus"
+          >
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+}
+function PlanDetailCard({ defaultChecked, setIsAddPlanOpen }) {
+  const [checked, setChecked] = useState(false);
+  return (
+    <div style={{ marginRight: 12, marginLeft: 12 }} className="plans__card">
+      <input
+        type="radio"
+        className="plans__card__input"
+        checked={checked}
+        onClick={(e) => {
+          checked ? setChecked(false) : setChecked(true);
+        }}
+      />
+      <div className="plans__card__content">
+        <img
+          src={placeholderImg}
+          alt="item__img"
+          className="plans__card__content__img"
+        />
+        <div className="plans__card__content__info">
+          <div className="plans__card__content__info__heading">Name</div>
+          <div className="plans__card__content__info__heading">Price</div>
+        </div>
+        <div className="plans__card__content__info">
+          <div className="plans__card__content__info__value">John Doe</div>
+          <div className="plans__card__content__info__value">$45</div>
+        </div>
+        <button
+          className="catagory__card__content__btns__btn catagory__card__content__btns__secondary"
+          onClick={() => {
+            setIsAddPlanOpen(true);
+          }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.674 13.971">
+            <g id="trash-2" transform="translate(0.5 0.5)">
+              <path
+                id="Path_9212"
+                data-name="Path 9212"
+                d="M3,6H14.674"
+                transform="translate(-3 -3.406)"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+              />
+              <path
+                id="Path_9213"
+                data-name="Path 9213"
+                d="M14.08,4.594v9.08a1.3,1.3,0,0,1-1.3,1.3H6.3a1.3,1.3,0,0,1-1.3-1.3V4.594m1.946,0V3.3A1.3,1.3,0,0,1,8.243,2h2.594a1.3,1.3,0,0,1,1.3,1.3v1.3"
+                transform="translate(-3.703 -2)"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+              />
+              <line
+                id="Line_18"
+                data-name="Line 18"
+                y2="3.948"
+                transform="translate(4.737 5.866)"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+              />
+              <line
+                id="Line_19"
+                data-name="Line 19"
+                y2="3.948"
+                transform="translate(7.105 5.866)"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+              />
+            </g>
+          </svg>
+        </button>
       </div>
     </div>
   );
@@ -139,21 +216,7 @@ export default function Plans({
   useEffect(() => {
     setIsSmallNav(true);
   }, []);
-  const tableHeadingRow = [
-    { heading: "" },
-    { heading: "Name" },
-    { heading: "Time" },
-    { heading: "Max Booking" },
-    { heading: "Booked" },
-  ];
 
-  const tableInfoRow = [
-    { type: "btn", label: "Edit" },
-    { info: "Fahad" },
-    { info: "12:00 AM to 2:00 PM" },
-    { info: "1234" },
-    { info: "321" },
-  ];
   return (
     <div className="container__wrapper">
       <div className="container">
@@ -178,26 +241,27 @@ export default function Plans({
             defaultChecked={true}
             setIsEditPlanOpen={setIsEditPlanOpen}
           />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
-          <PlanCard setIsEditPlanOpen={setIsEditPlanOpen} />
+          <PlanCard defaultChecked={true} />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+          <PlanCard />
+
+          <PlanCard />
         </div>
       </div>
       <div className="container" style={{ width: "55%" }}>
@@ -211,29 +275,31 @@ export default function Plans({
         </div>
         <div className="container__details">
           <div className="container__details__heading__wrapper">
-            <div className="container__details__heading">Name</div>
-            <div className="container__details__heading">Price</div>
-            <div className="container__details__heading">Catagory</div>
-            <div className="container__details__heading">Branch</div>
-            <div className="container__details__heading">Slab</div>
-            <div className="container__details__heading">Discription</div>
+            <div className="container__details__heading plan__detail__bold">
+              Name
+            </div>
+            <div className="container__details__heading plan__detail__bold">
+              Price
+            </div>
+            <div className="container__details__heading plan__detail__bold">
+              Catagory
+            </div>
+            <div className="container__details__heading plan__detail__bold">
+              Branch
+            </div>
+            <div className="container__details__heading plan__detail__bold">
+              Slab
+            </div>
+            <div className="container__details__heading plan__detail__bold">
+              Discription
+            </div>
           </div>
           <div className="container__details__plan__detail__wrapper">
-            <div className="container__details__heading plan__detail__bold">
-              Fahad Ayyaz
-            </div>
-            <div className="container__details__heading plan__detail__bold">
-              $57
-            </div>
-            <div className="container__details__heading plan__detail__bold">
-              Fast Food
-            </div>
-            <div className="container__details__heading plan__detail__bold">
-              Bilal House
-            </div>
-            <div className="container__details__heading plan__detail__bold">
-              500
-            </div>
+            <div className="container__details__heading">John Doe</div>
+            <div className="container__details__heading ">$57</div>
+            <div className="container__details__heading">Fast Food</div>
+            <div className="container__details__heading">Bilal House</div>
+            <div className="container__details__heading">500</div>
             <a className="container__details__heading__discription__tag">
               View Discription
               <div className="container__details__heading__discription__box">
@@ -244,30 +310,42 @@ export default function Plans({
             </a>
           </div>
         </div>
-        <div className="table__container">
-          <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
-          <div>
-            {tableInfoRow.map((item, i) => (
-              <div className="entry__info__row">
-                <div style={{ width: "200px" }}>
-                  <Button label={"Edit"} path={item.path} />
-                </div>
-
-                <div style={{ width: "200px" }}>{"item.info"}</div>
-
-                <div style={{ width: "200px" }}>
-                  {"Makaan No.2 Iqbal colony Lahore"}
-                </div>
-                <div style={{ width: "200px" }}>{"item.info"}</div>
-                <div style={{ width: "200px" }}>{"item.info"}</div>
-              </div>
-            ))}
+        <div className="item__details__wrapper">
+          <div
+            className="container item__details__container"
+            style={{ width: "50%" }}
+          >
+            <PlanDetailCard defaultChecked={true} />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
           </div>
-          {/* <div className="table__container__content">
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-            <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-          </div> */}
+          <div
+            className="container item__details__container"
+            style={{ width: "50%" }}
+          >
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+            <PlanDetailCard />
+          </div>
         </div>
       </div>
       <div className="container" style={{ maxWidth: "25%" }}>
@@ -297,29 +375,25 @@ export default function Plans({
         />
         <div className="container__data" style={{ maxHeight: "78%" }}>
           <ItemCard defaultChecked={true} />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard defaultChecked={true} />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
+          <ItemCard setIsAddPlanOpen={setIsAddPlanOpen} />
         </div>
       </div>
     </div>
