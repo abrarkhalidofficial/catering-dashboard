@@ -42,7 +42,35 @@ export default function EntryInfoRow({ tableEntryInfoRow, path }) {
       className="entry__info__row"
     >
       {tableEntryInfoRow.map((item, i) => (
-        <EntryInfoRowData
+        <>
+          <div
+            // className="entry__info__row"
+            style={{ width: "20%" }}
+          >
+            <Button label={item.label} path={item.path} />
+          </div>
+
+          <div
+            // className="entry__info__row__text"
+            style={{
+              width: "20%",
+            }}
+          >
+            <img src={EntryImg} alt="" />
+          </div>
+
+          <div
+            // className="entry__info__row__text"
+            style={{
+              marginRight: "20px",
+              marginLeft: "0px",
+              backgroundColor: "red",
+            }}
+          >
+            {item.info}
+          </div>
+
+          {/* <EntryInfoRowData
           key={i}
           value={item.info}
           variant={
@@ -50,7 +78,8 @@ export default function EntryInfoRow({ tableEntryInfoRow, path }) {
           }
           label={item.label}
           path={item.path}
-        />
+        /> */}
+        </>
       ))}
     </button>
   );

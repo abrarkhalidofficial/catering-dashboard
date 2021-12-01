@@ -42,72 +42,41 @@ export default function Booking({ setIsSmallNav }) {
       </div>
       <div className="table__container">
         <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
-        <div className="table__container__content">
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
-          <EntryInfoRow
-            tableEntryInfoRow={tableInfoRow}
-            path="/dashboard/booking-details"
-          />
+        <div>
+          {tableInfoRow.map((item, i) => (
+            <div className="entry__info__row">
+              <div style={{ width: "200px" }}>{"item.info"}</div>
+              <div style={{ width: "200px" }}>{"item.info"}</div>
+              <div style={{ width: "200px" }}>{"item.info"}</div>
+              <div style={{ width: "200px" }}>{"item.info"}</div>
+              <div style={{ width: "200px" }}>{"item.info"}</div>
+
+              <div style={{ width: "200px" }}>
+                {"Makaan No.2 Iqbal colony Lahore"}
+              </div>
+              <div style={{ width: "200px" }}>
+                {"Makaan No.2 Iqbal colony Lahore"}
+              </div>
+              <div style={{ width: "200px" }}>
+                {"Makaan No.2 Iqbal colony Lahore"}
+              </div>
+            </div>
+          ))}
         </div>
+        {/* <div className="table__container__content">
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+          <EntryInfoRow
+            tableEntryInfoRow={tableInfoRow}
+            path="/dashboard/booking-details"
+          />
+        </div> */}
       </div>
     </div>
   );

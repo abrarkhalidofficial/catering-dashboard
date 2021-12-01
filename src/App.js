@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useLocation } from "react";
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Routes,
   Route,
   Outlet,
-  useNavigate,
+  useNavigate
 } from "react-router-dom";
+import { createBrowserHistory } from "history";
 import NavBar from "./Components/NavBar";
 import SideBar from "./Components/SideBar";
 import Dashboard from "./Screens/Dashboard";
@@ -42,6 +43,10 @@ import EditSubCategory from "./Screens/EditSubCategory";
 import EmployeeDetails from "./Screens/EmployeeDetails";
 import BookingDetails from "./Screens/BookingDetails";
 
+const history = createBrowserHistory();
+// const location = useLocation();
+// const navigate = useNavigate();
+
 function Main({ setIsLogedin, isSmallNav, isLogedin }) {
   return (
     <>
@@ -68,7 +73,7 @@ function App() {
   const [isEditSubCatagoryOpen, setIsEditSubCatagoryOpen] = useState(false);
 
   return (
-    <BrowserRouter>
+    <Router history={history} >
       <div className="App">
         {isAddPlanOpen ? <AddPlan closeOnClick={setIsAddPlanOpen} /> : null}
         {isEditPlanOpen ? <EditPlan closeOnClick={setIsEditPlanOpen} /> : null}
@@ -87,7 +92,7 @@ function App() {
           <EditSubCategory closeOnClick={setIsEditSubCatagoryOpen} />
         ) : null}
 
-        <Routes>
+        <Routes >
           <Route path="/" element={<Login setIsLogedin={setIsLogedin} />} />
           <Route
             path="/dashboard"
@@ -105,15 +110,16 @@ function App() {
             />
             <Route
               path="branch"
-              element={<Branch setIsSmallNav={setIsSmallNav} />}
+               element={<Branch {...history} setIsSmallNav={setIsSmallNav}  />}
+            //element={<Branch navigate={navigate} location={location}  setIsSmallNav={setIsSmallNav}/>}
             />
             <Route
               path="add-branch"
-              element={<AddBranch setIsSmallNav={setIsSmallNav} />}
+              element={<AddBranch {...history} setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="edit-branch"
-              element={<EditBranch setIsSmallNav={setIsSmallNav} />}
+              element={<EditBranch {...history} setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="booking"
@@ -214,7 +220,7 @@ function App() {
           </Route>
         </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
