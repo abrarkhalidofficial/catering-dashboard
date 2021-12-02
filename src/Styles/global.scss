@@ -926,3 +926,19 @@ li {
     max-width: 85vw;
   }
 }
+@media (max-width: 1550px) {
+  .container__wrapper__plan {
+    width: 100%;
+    max-width: 1360px;
+  }
+}
+@media (max-width: 1440px) {
+  .container__wrapper__plan {
+    max-width: 1300px;
+  }
+}
+@media (max-width: 1360px) {
+  .container__wrapper__plan {
+    max-width: 1260px;
+  }
+}

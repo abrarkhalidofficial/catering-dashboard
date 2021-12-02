@@ -218,7 +218,7 @@ export default function Plans({
   }, []);
 
   return (
-    <div className="container__wrapper">
+    <div className="container__wrapper container__wrapper__plan">
       <div className="container" style={{ width: "25%" }}>
         <div className="container__header">
           <div className="container__header__heading">Plans</div>
