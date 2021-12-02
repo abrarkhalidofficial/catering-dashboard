@@ -56,10 +56,6 @@ export default function AddItem({ closeOnClick }) {
             <InputBox placeholder="Price" />
           </div>
           <div className="popup__container__form__content__row">
-            <InputBox placeholder="Item ID" style={{ marginRight: "1.2em" }} />
-            <InputBox placeholder="Sub-Category ID " />
-          </div>
-          <div className="popup__container__form__content__row">
             <InputBox
               placeholder="Description"
               variant="textarea"
