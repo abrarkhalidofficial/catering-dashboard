@@ -64,7 +64,7 @@ function App() {
   const [isLogedin, setIsLogedin] = useState(false);
   const [isSmallNav, setIsSmallNav] = useState(false);
   const [isAddPlanOpen, setIsAddPlanOpen] = useState(false);
-  const [isAddItemOpen, setIsAddItemOpen] = useState(true);
+  const [isAddItemOpen, setIsAddItemOpen] = useState(false);
   const [isAddCatagoryOpen, setIsAddCatagoryOpen] = useState(false);
   const [isAddSubCatagoryOpen, setIsAddSubCatagoryOpen] = useState(false);
   const [isEditPlanOpen, setIsEditPlanOpen] = useState(false);
