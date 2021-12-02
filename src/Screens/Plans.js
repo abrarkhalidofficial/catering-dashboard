@@ -219,7 +219,7 @@ export default function Plans({
 
   return (
     <div className="container__wrapper">
-      <div className="container">
+      <div className="container" style={{ width: "25%" }}>
         <div className="container__header">
           <div className="container__header__heading">Plans</div>
           <div className="container__header__btns">
@@ -264,7 +264,7 @@ export default function Plans({
           <PlanCard />
         </div>
       </div>
-      <div className="container" style={{ width: "55%" }}>
+      <div className="container" style={{ width: "50%" }}>
         <div className="container__header">
           <div
             className="container__header__heading"
@@ -273,27 +273,66 @@ export default function Plans({
             Plan Details
           </div>
         </div>
-        <div className="container__details">
+        <div className="container__details__plan__headings">
           <div className="container__details__heading__wrapper">
             <div className="container__details__heading plan__detail__bold">
               Name
             </div>
+            <div className="container__details__heading">John Doe</div>
+          </div>
+          <div className="container__details__heading__wrapper">
             <div className="container__details__heading plan__detail__bold">
               Price
             </div>
+            <div className="container__details__heading">$1234</div>
+          </div>
+          <div className="container__details__heading__wrapper">
             <div className="container__details__heading plan__detail__bold">
               Catagory
             </div>
+            <div className="container__details__heading">Fast Food</div>
+          </div>
+          <div className="container__details__heading__wrapper">
             <div className="container__details__heading plan__detail__bold">
               Branch
             </div>
+            <div className="container__details__heading">House</div>
+          </div>
+          <div className="container__details__heading__wrapper">
             <div className="container__details__heading plan__detail__bold">
               Slab
             </div>
+            <div className="container__details__heading">500</div>
+          </div>
+          <div className="container__details__heading__wrapper">
             <div className="container__details__heading plan__detail__bold">
               Discription
             </div>
+            <div className="container__details__heading">
+              <a className="container__details__heading__discription__tag">
+                View Discription
+                <div className="container__details__heading__discription__box">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its
+                  layout.It is a long established.
+                </div>
+              </a>
+            </div>
           </div>
+
+          {/* <div className="container__details__heading plan__detail__bold">
+            Catagory
+          </div>
+          <div className="container__details__heading plan__detail__bold">
+            Branch
+          </div>
+          <div className="container__details__heading plan__detail__bold">
+            Slab
+          </div>
+          <div className="container__details__heading plan__detail__bold">
+            Discription
+          </div>
+
           <div className="container__details__plan__detail__wrapper">
             <div className="container__details__heading">John Doe</div>
             <div className="container__details__heading ">$57</div>
@@ -308,7 +347,7 @@ export default function Plans({
                 is a long established.
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="item__details__wrapper">
           <div

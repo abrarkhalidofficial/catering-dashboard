@@ -720,26 +720,30 @@ li {
   background: linear-gradient(45deg, #ff8f6b, #c44e29);
   color: var(--white);
 }
-.container__details {
-  display: flex;
-  flex-direction: column;
-  padding: 2em;
+.plans__card__content__img {
+  width: 75px;
+  margin-right: 1em;
 }
-
 .container__details__heading__wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: fit-content;
+  min-width: 100px;
 }
 .container__details__plan__detail__wrapper {
   display: flex;
   flex-direction: row;
 }
+.container__details__plan__headings {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 2em;
+}
 .container__details__heading {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--text-color);
   margin-bottom: 1em;
-  width: fit-content;
-  min-width: 130px;
 }
 .plan__detail__bold {
   font-weight: bold;
