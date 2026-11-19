@@ -27,7 +27,6 @@ function CatagoryCard({ setIsEditCatagoryOpen }) {
         </div>
         <div className="catagory__card__content__btns">
           <button
-            style={{ marginBottom: 6 }}
             className="catagory__card__content__btns__btn catagory__card__content__btns__primary"
             onClick={() => {
               setIsEditCatagoryOpen(true);
@@ -123,7 +122,6 @@ function SubCatagoryCard({ setIsEditSubCatagoryOpen }) {
         </div>
         <div className="catagory__card__content__btns">
           <button
-            style={{ marginBottom: 6 }}
             className="catagory__card__content__btns__btn catagory__card__content__btns__primary"
             onClick={() => {
               setIsEditSubCatagoryOpen(true);
@@ -222,7 +220,6 @@ function ItemCard({ setIsEditItemOpen }) {
         <div className="catagory__card__content__btns">
           <button
             className="catagory__card__content__btns__btn catagory__card__content__btns__primary"
-            style={{ marginBottom: 6 }}
             onClick={() => {
               setIsEditItemOpen(true);
             }}

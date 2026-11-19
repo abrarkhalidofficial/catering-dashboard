@@ -53,18 +53,27 @@ export default function AddItem({ closeOnClick }) {
         <div className="popup__container__form__content">
           <div className="popup__container__form__content__row">
             <InputBox placeholder="Name" style={{ marginRight: "1.2em" }} />
-            <InputBox placeholder="Price" />
+            <InputBox
+              placeholder="Catagroy"
+              isMulti
+              variant="dropdown"
+              style={{
+                minWidth: "49%",
+                marginRight: "0em",
+              }}
+            />
           </div>
           <div className="popup__container__form__content__row">
             <InputBox
               placeholder="Description"
               variant="textarea"
               style={{
-                maxWidth: "100%",
+                maxWidth: "48.5%",
+                marginRight: "1.2em",
                 height: "115px",
               }}
             />
-            {/* <div className="popup__container__form__content__col">
+            <div className="popup__container__form__content__col">
               <InputBox
                 placeholder="Branch"
                 variant="dropdown"
@@ -75,7 +84,7 @@ export default function AddItem({ closeOnClick }) {
                 variant="dropdown"
                 style={{ marginRight: "0em" }}
               />
-            </div> */}
+            </div>
           </div>
           <div className="popup__container__form__content__row">
             <InputBox variant="file" placeholder="Add Image" />
