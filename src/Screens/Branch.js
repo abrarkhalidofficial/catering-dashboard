@@ -1,15 +1,10 @@
 import React, { useEffect } from "react";
-import { useNavigate, Link } from "react-router-dom";
 import Button from "../Components/Button";
 import EntryHeadingRow from "../Components/EntryHeadingRow";
-//import EntryInfoRow from "../Components/EntryInfoRow";
+import EntryInfoRow from "../Components/EntryInfoRow";
 import InputBox from "../Components/InputBox";
-import EntryImg from "../Assets/EntryImg.png";
 
-const Branch = ({ setIsSmallNav }) => {
-  //debugger;
-  const navigate = useNavigate();
-
+export default function Branch({ setIsSmallNav }) {
   useEffect(() => {
     setIsSmallNav(false);
   }, []);
@@ -21,29 +16,11 @@ const Branch = ({ setIsSmallNav }) => {
   ];
 
   const tableInfoRow = [
-    { name: "Faraz", address: "House No. 2 Iqbal colony Lahore" },
-    { name: "Faraz", address: "House No. 2 Iqbal colony Lahore" },
-    { name: "Faraz", address: "House No. 2 Iqbal colony Lahore" },
-    { name: "Faraz", address: "House No. 2 Iqbal colony Lahore" },
+    { type: "btn", label: "Edit", path: "/dashboard/edit-branch" },
+    { type: "img" },
+    { info: "House" },
+    { info: "Makaan No.2 Iqbal colony Lohore" },
   ];
-
-  //   const tableInfoRow = [
-  //     { type: "btn", label: "Edit", path: "/dashboard/edit-branch" },
-  //     { type: "img" },
-  //     { info: "House" },
-  //     { info: "Makaan No.2 Iqbal colony Lohore" },
-  //     { info: "Makaan No.2 Iqbal colony Lohore" },
-  //     { info: "Makaan No.2 Iqbal colony Lohore" },
-  //     { info: "Makaan No.2 Iqbal colony Lohore" },
-  //     { info: "Makaan No.2 Iqbal colony Lohore" },
-  //     { info: "Makaan No.2 Iqbal colony Lohore" },
-  //     { info: "Makaan No.2 Iqbal colony Lohore" },
-  //     { info: "Makaan No.2 Iqbal colony Lohore" },
-  //   ];
-  const onEditClick = (Data) => {
-    //navigate("/dashboard/edit-branch", { state: { objectData: Data } });
-    navigate("/dashboard/edit-branch", { state: "bjhf" });
-  };
   return (
     <div className="container">
       <div className="container__header">
@@ -60,48 +37,43 @@ const Branch = ({ setIsSmallNav }) => {
       </div>
       <div className="table__container">
         <EntryHeadingRow tableHeadingEntryRow={tableHeadingRow} />
-        <div
-        //style={{ overflow: "scroll" }}
-        //   className="table__container__content"
-        //style={{ padding: "1em" }}
-        >
-          {tableInfoRow.map((item, i) => (
-            <div className="entry__info__row">
-              <div style={{ width: "200px" }}>
-                {/* <Link
-                  to={{
-                    pathname: "/dashboard/edit-branch",
-                    state: { fromDashboard: true },
-                  }}
-                > */}
-                <Button
-                  label={"Edit"}
-                  //path={item.path}
-                  onClick={() => onEditClick(item)}
-                />
-                {/* </Link> */}
-              </div>
-
-              <div style={{ width: "200px" }}>
-                <img src={EntryImg} alt="" />
-              </div>
-
-              <div style={{ width: "200px" }}>{item.name}</div>
-
-              <div style={{ width: "200px" }}>{item.address}</div>
-            </div>
-          ))}
-          {/* <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+        <div className="table__container__content">
           <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
           <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
           <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
           <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
           <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
-        */}
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
+          <EntryInfoRow tableEntryInfoRow={tableInfoRow} />
         </div>
       </div>
     </div>
   );
-};
-
-export default Branch;
+}
