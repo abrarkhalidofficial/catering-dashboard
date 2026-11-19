@@ -1,12 +1,11 @@
-import React, { useState, useLocation } from "react";
+import React, { useState } from "react";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
   Outlet,
   useNavigate,
 } from "react-router-dom";
-import { createBrowserHistory } from "history";
 import NavBar from "./Components/NavBar";
 import SideBar from "./Components/SideBar";
 import Dashboard from "./Screens/Dashboard";
@@ -43,10 +42,6 @@ import EditSubCategory from "./Screens/EditSubCategory";
 import EmployeeDetails from "./Screens/EmployeeDetails";
 import BookingDetails from "./Screens/BookingDetails";
 
-const history = createBrowserHistory();
-// const location = useLocation();
-// const navigate = useNavigate();
-
 function Main({ setIsLogedin, isSmallNav, isLogedin }) {
   return (
     <>
@@ -73,7 +68,7 @@ function App() {
   const [isEditSubCatagoryOpen, setIsEditSubCatagoryOpen] = useState(false);
 
   return (
-    <Router history={history}>
+    <BrowserRouter>
       <div className="App">
         {isAddPlanOpen ? <AddPlan closeOnClick={setIsAddPlanOpen} /> : null}
         {isEditPlanOpen ? <EditPlan closeOnClick={setIsEditPlanOpen} /> : null}
@@ -110,18 +105,15 @@ function App() {
             />
             <Route
               path="branch"
-              element={<Branch {...history} setIsSmallNav={setIsSmallNav} />}
-              //element={<Branch navigate={navigate} location={location}  setIsSmallNav={setIsSmallNav}/>}
+              element={<Branch setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="add-branch"
-              element={<AddBranch {...history} setIsSmallNav={setIsSmallNav} />}
+              element={<AddBranch setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="edit-branch"
-              element={
-                <EditBranch {...history} setIsSmallNav={setIsSmallNav} />
-              }
+              element={<EditBranch setIsSmallNav={setIsSmallNav} />}
             />
             <Route
               path="booking"
@@ -222,7 +214,7 @@ function App() {
           </Route>
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
